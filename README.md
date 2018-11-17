@@ -25,7 +25,7 @@ There exists some statistically significant correlation between the ingredients,
 
 ### Dataset
 
-We are going to use an open dataset found on kaggle.com. The link to the dataset is (here)[https://www.kaggle.com/jtrofe/beer-recipes]. The dataset includes 75,000 home-brewed beers recipes. There are more than 176 styles and the recipes are reported by users on the [this website.](https://www.brewersfriend.com/) There is a lot of metadata on each home-brewed beer but the most important features are the original and final gravity, ABV, IBU and the color of the beer. There is lots of other information that we might or might not use when we perform our analysis based on if they add value to our model.
+We are going to use an open dataset found on kaggle.com. The link to the dataset is [here](https://www.kaggle.com/jtrofe/beer-recipes). The dataset includes 75,000 home-brewed beers recipes. There are more than 176 styles and the recipes are reported by users on the [this website.](https://www.brewersfriend.com/) There is a lot of metadata on each home-brewed beer but the most important features are the original and final gravity, ABV, IBU and the color of the beer. There is lots of other information that we might or might not use when we perform our analysis based on if they add value to our model.
 Furthermore, we intend on using the aggregate user ratings of these beers and this data is not part of the .csv given to us from Kaggle. Therefore, we will use scripts to scrape the Brewers Friend website to gather the ratings for the beer and recipes that have them.
 
 ## Methods
