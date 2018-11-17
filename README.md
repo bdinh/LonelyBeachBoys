@@ -28,11 +28,11 @@ There exists some statistically significant correlation between the ingredients,
 We are going to use an open dataset found on kaggle.com. The link to the dataset is [here](https://www.kaggle.com/jtrofe/beer-recipes). The dataset includes 75,000 home-brewed beers recipes. There are more than 176 styles and the recipes are reported by users on the [this website.](https://www.brewersfriend.com/) There is a lot of metadata on each home-brewed beer but the most important features are the original and final gravity, ABV, IBU and the color of the beer. There is lots of other information that we might or might not use when we perform our analysis based on if they add value to our model.
 Furthermore, we intend on using the aggregate user ratings of these beers and this data is not part of the .csv given to us from Kaggle. Therefore, we will use scripts to scrape the Brewers Friend website to gather the ratings for the beer and recipes that have them.
 
-## Methods
+### Methods
 
 To explore our data and see if there are correlations between certain features and the ratings of beers we will use **linear and generalized linear models** to explore the dataset. Once we have done enough exploration we will use Machine Learning methods, specifically, **decision trees, boosted decision trees, and random forests** to create predictive models. We will use these models to see if we can use certain features of the homebrewing recipes to predict the ratings of beers. Since we have aggregate rating data, we will use **supervised learning** to build and train the models.
 
-## Audience
+### Audience
 
 Our target audience will consist primarily of individuals who are interested in brewing or learning about homemade beer. This consists of individuals from a range of brewing experiences, new or experienced.
 
