@@ -1,0 +1,337 @@
+name,url,country,category,type,color,color_hex,ppg,recipes
+Abbey Malt,https://www.brewersfriend.com/fermentables/german-abbey-malt/,German,Grain,Base malt,17 °L ,#8E2900,33,"2,497"
+Acerola,https://www.brewersfriend.com/fermentables/acerola/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1.5,4
+Acidulated Malt,https://www.brewersfriend.com/fermentables/german-acidulated-malt/,German,Grain,Acidulated malt,3 °L ,#FFCA5A,27,"33,518"
+Agave Nectar,https://www.brewersfriend.com/fermentables/agave-nectar/,N/A,Sugar,Sugar,2 °L ,#FFD878,52.5,149
+Ale Malt,https://www.brewersfriend.com/fermentables/ireland-ale-malt/,Ireland,Grain,Base malt,3 °L ,#FFCA5A,37,757
+Ale Malt,https://www.brewersfriend.com/fermentables/new-zealand-ale-malt/,New Zealand,Grain,Base malt,3 °L ,#FFCA5A,37.4,"1,120"
+Amber,https://www.brewersfriend.com/fermentables/united-kingdom-amber/,United Kingdom,Grain,Base malt,27 °L ,#470606,32,"9,345"
+American Ale Malt,https://www.brewersfriend.com/fermentables/new-zealand-american-ale-malt/,New Zealand,Grain,Base malt,3 °L ,#FFD878,37.3,986
+Apple,https://www.brewersfriend.com/fermentables/apple/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5.6,667
+Apricot,https://www.brewersfriend.com/fermentables/apricot/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.05,214
+Apricot (dried),https://www.brewersfriend.com/fermentables/apricot-dried/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,17.9,34
+Aromatic,https://www.brewersfriend.com/fermentables/belgian-aromatic/,Belgian,Grain,Roasted malt,38 °L ,#1F0506,33,"13,427"
+Aromatic Malt,https://www.brewersfriend.com/fermentables/american-aromatic-malt/,American,Grain,Base malt,20 °L ,#771900,35,"9,361"
+Ashbourne Mild,https://www.brewersfriend.com/fermentables/american-ashbourne-mild/,American,Grain,Base malt,5 °L ,#F8A600,30,811
+Aurora Malt,https://www.brewersfriend.com/fermentables/new-zealand-aurora-malt/,New Zealand,Grain,Base malt,29 °L ,#2D0607,37.2,226
+Banana,https://www.brewersfriend.com/fermentables/banana/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,7.65,98
+Belgian Candi Sugar - Amber/Brown (60L),https://www.brewersfriend.com/fermentables/belgian-candi-sugar-amber-brown-60l/,N/A,Sugar,Sugar,60 °L ,#1F0506,38,"3,141"
+Belgian Candi Sugar - Clear/Blond (0L),https://www.brewersfriend.com/fermentables/belgian-candi-sugar-clear-blond-0l/,N/A,Sugar,Sugar,0 °L ,#FFF4D4,38,"8,632"
+Belgian Candi Sugar - Dark (275L),https://www.brewersfriend.com/fermentables/belgian-candi-sugar-dark-275l/,N/A,Sugar,Sugar,275 °L ,#1F0506,38,"2,934"
+Belgian Candi Syrup - Amber (40L),https://www.brewersfriend.com/fermentables/belgian-candi-syrup-amber-40l/,N/A,Sugar,Sugar,40 °L ,#1F0506,32,"2,405"
+Belgian Candi Syrup - Clear (0L),https://www.brewersfriend.com/fermentables/belgian-candi-syrup-clear-0l/,N/A,Sugar,Sugar,0 °L ,#FFF4D4,32,"2,976"
+Belgian Candi Syrup - D-180,https://www.brewersfriend.com/fermentables/belgian-candi-syrup-d-180/,N/A,Sugar,Sugar,180 °L ,#1F0506,32,"1,372"
+Belgian Candi Syrup - D-45,https://www.brewersfriend.com/fermentables/belgian-candi-syrup-d-45/,N/A,Sugar,Sugar,45 °L ,#1F0506,32,781
+Belgian Candi Syrup - D-90,https://www.brewersfriend.com/fermentables/belgian-candi-syrup-d-90/,N/A,Sugar,Sugar,90 °L ,#1F0506,32,"1,081"
+Belgian Candi Syrup - D2 (160L),https://www.brewersfriend.com/fermentables/belgian-candi-syrup-d2-160l/,N/A,Sugar,Sugar,160 °L ,#1F0506,32,806
+Belgian Candi Syrup - Dark (80L),https://www.brewersfriend.com/fermentables/belgian-candi-syrup-dark-80l/,N/A,Sugar,Sugar,80 °L ,#1F0506,32,"2,550"
+Belgian Candi Syrup - Golden (5L),https://www.brewersfriend.com/fermentables/belgian-candi-syrup-golden-5l/,N/A,Sugar,Sugar,5 °L ,#F8A600,32,535
+Biscuit,https://www.brewersfriend.com/fermentables/belgian-biscuit/,Belgian,Grain,Roasted malt,23 °L ,#5E0B00,35,"25,353"
+Biscuit Malt,https://www.brewersfriend.com/fermentables/new-zealand-biscuit-malt/,New Zealand,Grain,Roasted malt,30 °L ,#1F0506,35,527
+Black Barley,https://www.brewersfriend.com/fermentables/american-black-barley/,American,Grain,Roasted malt,530 °L ,#1F0506,27,"3,346"
+Black Malt,https://www.brewersfriend.com/fermentables/american-black-malt/,American,Grain,Roasted malt,500 °L ,#1F0506,28,"15,862"
+Black Malt,https://www.brewersfriend.com/fermentables/finland-black-malt/,Finland,Grain,Roasted malt,526 °L ,#1F0506,30,880
+Black Patent,https://www.brewersfriend.com/fermentables/united-kingdom-black-patent/,United Kingdom,Grain,Roasted malt,525 °L ,#1F0506,27,"16,754"
+Blackberry,https://www.brewersfriend.com/fermentables/blackberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.6,243
+Blackprinz,https://www.brewersfriend.com/fermentables/american-blackprinz/,American,Grain,Roasted malt,500 °L ,#1F0506,36,"4,025"
+Blueberry,https://www.brewersfriend.com/fermentables/blueberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.95,364
+Bohemian Pilsner,https://www.brewersfriend.com/fermentables/german-bohemian-pilsner/,German,Grain,Base malt,2 °L ,#FFE699,38,"7,273"
+Bonlander Munich,https://www.brewersfriend.com/fermentables/american-bonlander-munich/,American,Grain,Base malt,10 °L ,#CF6900,36,"3,027"
+Boysenberry,https://www.brewersfriend.com/fermentables/boysenberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.5,8
+Brown,https://www.brewersfriend.com/fermentables/united-kingdom-brown/,United Kingdom,Grain,Roasted malt,65 °L ,#1F0506,32,"11,602"
+Brown Malt,https://www.brewersfriend.com/fermentables/new-zealand-brown-malt/,New Zealand,Grain,Roasted malt,90 °L ,#1F0506,34,384
+Brown Rice Syrup - Gluten Free,https://www.brewersfriend.com/fermentables/brown-rice-syrup-gluten-free/,N/A,Sugar,Raw,2 °L ,#FFD878,44,449
+Brown Sugar,https://www.brewersfriend.com/fermentables/brown-sugar/,N/A,Sugar,Sugar,15 °L ,#A13700,45,"15,940"
+Buckwheat Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-buckwheat-malt-gluten-free/,American,Grain,Gluten-free malt,2 °L ,#FFD878,25,307
+Cane Sugar,https://www.brewersfriend.com/fermentables/cane-sugar/,N/A,Sugar,Sugar,0 °L ,#FFF4D4,46,"26,630"
+Cantaloupe,https://www.brewersfriend.com/fermentables/cantaloupe/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.4,4
+Cara 20L,https://www.brewersfriend.com/fermentables/belgian-cara-20l/,Belgian,Grain,Crystal malt,22 °L ,#660D00,34,"4,087"
+Cara 45L,https://www.brewersfriend.com/fermentables/belgian-cara-45l/,Belgian,Grain,Crystal malt,42 °L ,#1F0506,34,"3,596"
+Cara Malt,https://www.brewersfriend.com/fermentables/united-kingdom-cara-malt/,United Kingdom,Grain,Crystal malt,18 °L ,#882300,35,"10,520"
+Cara Pale,https://www.brewersfriend.com/fermentables/finland-cara-pale/,Finland,Grain,Crystal malt,4 °L ,#FFBF42,35,"1,527"
+Cara Plus 100,https://www.brewersfriend.com/fermentables/finland-cara-plus-100/,Finland,Grain,Crystal malt,38 °L ,#1F0506,35,317
+Cara Plus 150,https://www.brewersfriend.com/fermentables/finland-cara-plus-150/,Finland,Grain,Crystal malt,57 °L ,#1F0506,35,402
+Cara Plus 200,https://www.brewersfriend.com/fermentables/finland-cara-plus-200/,Finland,Grain,Crystal malt,76 °L ,#1F0506,35,179
+Cara Plus 250,https://www.brewersfriend.com/fermentables/finland-cara-plus-250/,Finland,Grain,Crystal malt,94 °L ,#1F0506,35,68
+CaraAmber,https://www.brewersfriend.com/fermentables/german-caraamber/,German,Grain,Crystal malt,23 °L ,#5E0B00,34,"5,396"
+CaraAroma,https://www.brewersfriend.com/fermentables/german-caraaroma/,German,Grain,Crystal malt,130 °L ,#1F0506,34,"8,355"
+CaraBelge,https://www.brewersfriend.com/fermentables/german-carabelge/,German,Grain,Crystal malt,14 °L ,#B04500,33,"1,590"
+CaraBohemian,https://www.brewersfriend.com/fermentables/german-carabohemian/,German,Grain,Crystal malt,75 °L ,#1F0506,33,"1,640"
+CaraBrown,https://www.brewersfriend.com/fermentables/american-carabrown/,American,Grain,Roasted malt,55 °L ,#1F0506,34,"2,011"
+CaraCrystal Wheat Malt,https://www.brewersfriend.com/fermentables/american-caracrystal-wheat-malt/,American,Grain,Crystal malt,55 °L ,#1F0506,34,"2,398"
+Carafa I,https://www.brewersfriend.com/fermentables/german-carafa-i/,German,Grain,Roasted malt,340 °L ,#1F0506,32,"5,253"
+Carafa II,https://www.brewersfriend.com/fermentables/german-carafa-ii/,German,Grain,Roasted malt,425 °L ,#1F0506,32,"9,002"
+Carafa III,https://www.brewersfriend.com/fermentables/german-carafa-iii/,German,Grain,Roasted malt,535 °L ,#1F0506,32,"11,347"
+CaraFoam,https://www.brewersfriend.com/fermentables/german-carafoam/,German,Grain,Crystal malt,2 °L ,#FFE699,37,"12,371"
+CaraHell,https://www.brewersfriend.com/fermentables/german-carahell/,German,Grain,Crystal malt,11 °L ,#C35900,34,"12,196"
+Carambola,https://www.brewersfriend.com/fermentables/carambola/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1.95,1
+Caramel / Crystal 10L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-10l/,American,Grain,Crystal malt,10 °L ,#CF6900,35,"23,003"
+Caramel / Crystal 120L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-120l/,American,Grain,Crystal malt,120 °L ,#1F0506,33,"32,816"
+Caramel / Crystal 150L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-150l/,American,Grain,Crystal malt,150 °L ,#1F0506,33,"4,657"
+Caramel / Crystal 15L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-15l/,American,Grain,Crystal malt,15 °L ,#A13700,35,"9,780"
+Caramel / Crystal 20L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-20l/,American,Grain,Crystal malt,20 °L ,#771900,35,"32,073"
+Caramel / Crystal 30L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-30l/,American,Grain,Crystal malt,30 °L ,#2D0607,34,"7,180"
+Caramel / Crystal 40L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-40l/,American,Grain,Crystal malt,40 °L ,#1F0506,34,"56,229"
+Caramel / Crystal 60L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-60l/,American,Grain,Crystal malt,60 °L ,#1F0506,34,"65,151"
+Caramel / Crystal 75L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-75l/,American,Grain,Crystal malt,75 °L ,#1F0506,33,"6,130"
+Caramel / Crystal 80L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-80l/,American,Grain,Crystal malt,80 °L ,#1F0506,33,"23,073"
+Caramel / Crystal 90L,https://www.brewersfriend.com/fermentables/american-caramel-crystal-90l/,American,Grain,Crystal malt,90 °L ,#1F0506,33,"5,530"
+Caramel Pils,https://www.brewersfriend.com/fermentables/belgian-caramel-pils/,Belgian,Grain,Crystal malt,8 °L ,#DE7C00,34,"5,780"
+Caramel Pils,https://www.brewersfriend.com/fermentables/german-caramel-pils/,German,Grain,Crystal malt,2 °L ,#FFD878,35,"4,896"
+Caramel Wheat,https://www.brewersfriend.com/fermentables/german-caramel-wheat/,German,Grain,Crystal malt,46 °L ,#1F0506,34,"2,007"
+CaraMunich,https://www.brewersfriend.com/fermentables/belgian-caramunich/,Belgian,Grain,Crystal malt,50 °L ,#1F0506,33,"10,645"
+CaraMunich I,https://www.brewersfriend.com/fermentables/german-caramunich-i/,German,Grain,Crystal malt,39 °L ,#1F0506,34,"13,300"
+CaraMunich II,https://www.brewersfriend.com/fermentables/german-caramunich-ii/,German,Grain,Crystal malt,46 °L ,#1F0506,34,"13,924"
+CaraMunich III,https://www.brewersfriend.com/fermentables/german-caramunich-iii/,German,Grain,Crystal malt,57 °L ,#1F0506,34,"9,661"
+Carapils,https://www.brewersfriend.com/fermentables/german-carapils/,German,Grain,Crystal malt,1 °L ,#FFE699,35,"26,874"
+Carapils (Dextrine Malt),https://www.brewersfriend.com/fermentables/american-carapils-dextrine-malt/,American,Grain,Crystal malt,2 °L ,#FFE699,33,"74,390"
+CaraRed,https://www.brewersfriend.com/fermentables/german-carared/,German,Grain,Crystal malt,20 °L ,#771900,34,"13,456"
+CaraRye,https://www.brewersfriend.com/fermentables/german-cararye/,German,Grain,Crystal malt,67 °L ,#1F0506,34,212
+Carastan (30/37),https://www.brewersfriend.com/fermentables/united-kingdom-carastan-30-37/,United Kingdom,Grain,Crystal malt,34 °L ,#1F0506,35,"3,353"
+Carastan Light (15L),https://www.brewersfriend.com/fermentables/united-kingdom-carastan-light-15l/,United Kingdom,Grain,Crystal malt,15 °L ,#A13700,35,703
+CaraVienne,https://www.brewersfriend.com/fermentables/belgian-caravienne/,Belgian,Grain,Crystal malt,20 °L ,#771900,34,"7,802"
+Carrot,https://www.brewersfriend.com/fermentables/carrot/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2,25
+Casaba Melon,https://www.brewersfriend.com/fermentables/casaba-melon/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1.9,1
+Cashew,https://www.brewersfriend.com/fermentables/cashew/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3,3
+Celery,https://www.brewersfriend.com/fermentables/celery/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.75,2
+Cherry,https://www.brewersfriend.com/fermentables/cherry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,6.3,347
+"Cherry, dark sweet",https://www.brewersfriend.com/fermentables/cherry-dark-sweet/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,6.4,118
+"Cherry, Montmorency",https://www.brewersfriend.com/fermentables/cherry-montmorency/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.55,51
+Chocolate,https://www.brewersfriend.com/fermentables/american-chocolate/,American,Grain,Roasted malt,350 °L ,#1F0506,29,"54,321"
+Chocolate,https://www.brewersfriend.com/fermentables/belgian-chocolate/,Belgian,Grain,Roasted malt,340 °L ,#1F0506,30,"6,913"
+Chocolate,https://www.brewersfriend.com/fermentables/united-kingdom-chocolate/,United Kingdom,Grain,Roasted malt,425 °L ,#1F0506,34,"28,949"
+Chocolate Malt,https://www.brewersfriend.com/fermentables/finland-chocolate-malt/,Finland,Grain,Roasted malt,338 °L ,#1F0506,31,"2,422"
+Chocolate Rye,https://www.brewersfriend.com/fermentables/german-chocolate-rye/,German,Grain,Roasted malt,240 °L ,#1F0506,31,"3,299"
+Chocolate Wheat,https://www.brewersfriend.com/fermentables/german-chocolate-wheat/,German,Grain,Roasted malt,413 °L ,#1F0506,31,"3,963"
+Coffee Malt,https://www.brewersfriend.com/fermentables/united-kingdom-coffee-malt/,United Kingdom,Grain,Roasted malt,150 °L ,#1F0506,36,"3,079"
+Cookie Malt,https://www.brewersfriend.com/fermentables/finland-cookie-malt/,Finland,Grain,Roasted malt,19 °L ,#7B1A00,37,411
+Corn Sugar - Dextrose,https://www.brewersfriend.com/fermentables/corn-sugar-dextrose/,N/A,Sugar,Sugar,1 °L ,#FFF4D4,46,"37,203"
+Corn Syrup,https://www.brewersfriend.com/fermentables/corn-syrup/,N/A,Sugar,Sugar,1 °L ,#FFF4D4,37,"1,086"
+Crabapple,https://www.brewersfriend.com/fermentables/crabapple/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.85,4
+Cranberry,https://www.brewersfriend.com/fermentables/cranberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1.8,157
+Crystal 10L Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-crystal-10l-millet-malt-gluten-free/,American,Grain,Gluten-free malt,10 °L ,#CF6900,25,250
+Crystal 140L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-140l/,United Kingdom,Grain,Crystal malt,140 °L ,#1F0506,33,"4,844"
+Crystal 15L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-15l/,United Kingdom,Grain,Crystal malt,15 °L ,#A13700,34,"4,021"
+Crystal 30L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-30l/,United Kingdom,Grain,Crystal malt,30 °L ,#2D0607,34,"5,133"
+Crystal 30L Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-crystal-30l-millet-malt-gluten-free/,American,Grain,Gluten-free malt,30 °L ,#2D0607,25,113
+Crystal 45L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-45l/,United Kingdom,Grain,Crystal malt,45 °L ,#1F0506,34,"8,212"
+Crystal 50L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-50l/,United Kingdom,Grain,Crystal malt,50 °L ,#1F0506,34,"5,055"
+Crystal 55L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-55l/,United Kingdom,Grain,Crystal malt,55 °L ,#1F0506,34,414
+Crystal 60L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-60l/,United Kingdom,Grain,Crystal malt,60 °L ,#1F0506,34,"16,071"
+Crystal 70L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-70l/,United Kingdom,Grain,Crystal malt,70 °L ,#1F0506,34,"5,287"
+Crystal 90L,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-90l/,United Kingdom,Grain,Crystal malt,90 °L ,#1F0506,33,"4,504"
+Crystal Malt 100,https://www.brewersfriend.com/fermentables/finland-crystal-malt-100/,Finland,Grain,Crystal malt,38 °L ,#1F0506,35,"1,392"
+Crystal Malt 150,https://www.brewersfriend.com/fermentables/finland-crystal-malt-150/,Finland,Grain,Crystal malt,57 °L ,#1F0506,35,"1,175"
+Crystal Malt 250,https://www.brewersfriend.com/fermentables/finland-crystal-malt-250/,Finland,Grain,Crystal malt,94 °L ,#1F0506,35,219
+Crystal Malt 300,https://www.brewersfriend.com/fermentables/finland-crystal-malt-300/,Finland,Grain,Crystal malt,113 °L ,#1F0506,35,601
+Crystal Malt 50,https://www.brewersfriend.com/fermentables/finland-crystal-malt-50/,Finland,Grain,Crystal malt,19 °L ,#7B1A00,35,863
+Crystal Rye,https://www.brewersfriend.com/fermentables/united-kingdom-crystal-rye/,United Kingdom,Grain,Crystal malt,90 °L ,#1F0506,33,"2,469"
+"Currant, black",https://www.brewersfriend.com/fermentables/currant-black/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.2,70
+"Currant, red",https://www.brewersfriend.com/fermentables/currant-red/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.7,17
+Dark Ale,https://www.brewersfriend.com/fermentables/finland-dark-ale/,Finland,Grain,Roasted malt,14 °L ,#A63E00,35,343
+Dark Chocolate,https://www.brewersfriend.com/fermentables/american-dark-chocolate/,American,Grain,Roasted malt,420 °L ,#1F0506,29,"4,259"
+Dark Chocolate Malt,https://www.brewersfriend.com/fermentables/new-zealand-dark-chocolate-malt/,New Zealand,Grain,Roasted malt,660 °L ,#1F0506,32.7,316
+Dark Crystal 80L,https://www.brewersfriend.com/fermentables/united-kingdom-dark-crystal-80l/,United Kingdom,Grain,Crystal malt,80 °L ,#1F0506,33,"5,996"
+Dark Crystal Malt,https://www.brewersfriend.com/fermentables/new-zealand-dark-crystal-malt/,New Zealand,Grain,Crystal malt,96 °L ,#1F0506,35.4,517
+Dark Munich,https://www.brewersfriend.com/fermentables/german-dark-munich/,German,Grain,Base malt,10 °L ,#CF6900,36,"6,853"
+Dark Roasted Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-dark-roasted-millet-malt-gluten-free/,American,Grain,Gluten-free malt,300 °L ,#1F0506,25,96
+Dark Wheat,https://www.brewersfriend.com/fermentables/german-dark-wheat/,German,Grain,Base malt,7 °L ,#EA8F00,39,"2,336"
+Date,https://www.brewersfriend.com/fermentables/date/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,27,81
+Date (dried),https://www.brewersfriend.com/fermentables/date-dried/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,28.9,66
+De-Bittered Black,https://www.brewersfriend.com/fermentables/belgian-de-bittered-black/,Belgian,Grain,Roasted malt,566 °L ,#1F0506,34,"3,442"
+De-Husked Caraf I,https://www.brewersfriend.com/fermentables/german-de-husked-caraf-i/,German,Grain,Roasted malt,340 °L ,#1F0506,32,"1,194"
+De-Husked Caraf II,https://www.brewersfriend.com/fermentables/german-de-husked-caraf-ii/,German,Grain,Roasted malt,418 °L ,#1F0506,32,"2,723"
+De-Husked Caraf III,https://www.brewersfriend.com/fermentables/german-de-husked-caraf-iii/,German,Grain,Roasted malt,470 °L ,#1F0506,32,"3,769"
+Dewberry,https://www.brewersfriend.com/fermentables/dewberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.5,0
+Dextrine Malt,https://www.brewersfriend.com/fermentables/united-kingdom-dextrine-malt/,United Kingdom,Grain,Crystal malt,2 °L ,#FFE699,33,"2,673"
+Distillers Malt,https://www.brewersfriend.com/fermentables/ireland-distillers-malt/,Ireland,Grain,Base malt,2 °L ,#FFD878,37,59
+Dry Malt Extract - Amber,https://www.brewersfriend.com/fermentables/dry-malt-extract-amber/,N/A,Dry Extract,Extract,10 °L ,#CF6900,42,"13,060"
+Dry Malt Extract - Dark,https://www.brewersfriend.com/fermentables/dry-malt-extract-dark/,N/A,Dry Extract,Extract,30 °L ,#2D0607,44,"7,219"
+Dry Malt Extract - Extra Light,https://www.brewersfriend.com/fermentables/dry-malt-extract-extra-light/,N/A,Dry Extract,Extract,3 °L ,#FFD878,42,"12,854"
+Dry Malt Extract - Light,https://www.brewersfriend.com/fermentables/dry-malt-extract-light/,N/A,Dry Extract,Extract,4 °L ,#FFBF42,42,"45,077"
+Dry Malt Extract - Munich,https://www.brewersfriend.com/fermentables/dry-malt-extract-munich/,N/A,Dry Extract,Extract,8 °L ,#DE7C00,42,"1,757"
+Dry Malt Extract - Pilsen,https://www.brewersfriend.com/fermentables/dry-malt-extract-pilsen/,N/A,Dry Extract,Extract,2 °L ,#FFD878,42,"13,034"
+Dry Malt Extract - Wheat,https://www.brewersfriend.com/fermentables/dry-malt-extract-wheat/,N/A,Dry Extract,Extract,3 °L ,#FFCA5A,42,"12,338"
+Elderberry,https://www.brewersfriend.com/fermentables/elderberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.75,20
+Enzyme Malt,https://www.brewersfriend.com/fermentables/finland-enzyme-malt/,Finland,Grain,Base malt,0 °L ,#FFF4D4,35,79
+ESB Malt,https://www.brewersfriend.com/fermentables/canadian-esb-malt/,Canadian,Grain,Base malt,4 °L ,#FFBF42,36,"1,134"
+Extra Dark Crystal 120L,https://www.brewersfriend.com/fermentables/united-kingdom-extra-dark-crystal-120l/,United Kingdom,Grain,Crystal malt,120 °L ,#1F0506,33,"4,839"
+Extra Dark Crystal 160L,https://www.brewersfriend.com/fermentables/united-kingdom-extra-dark-crystal-160l/,United Kingdom,Grain,Crystal malt,160 °L ,#1F0506,33,"2,845"
+Fig,https://www.brewersfriend.com/fermentables/fig/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5.3,22
+Figs (dried),https://www.brewersfriend.com/fermentables/figs-dried/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,29.95,42
+Flaked Barley,https://www.brewersfriend.com/fermentables/flaked-barley/,N/A,Adjunct,Raw,2 °L ,#FFD878,32,"28,484"
+Flaked Corn,https://www.brewersfriend.com/fermentables/flaked-corn/,N/A,Adjunct,Raw,1 °L ,#FFF4D4,40,"18,891"
+Flaked Oats,https://www.brewersfriend.com/fermentables/flaked-oats/,N/A,Adjunct,Raw,2 °L ,#FFD878,33,"82,220"
+Flaked Rice,https://www.brewersfriend.com/fermentables/flaked-rice/,N/A,Adjunct,Raw,1 °L ,#FFF4D4,40,"6,703"
+Flaked Rye,https://www.brewersfriend.com/fermentables/flaked-rye/,N/A,Adjunct,Raw,3 °L ,#FFCA5A,36,"7,337"
+Flaked Wheat,https://www.brewersfriend.com/fermentables/flaked-wheat/,N/A,Adjunct,Raw,2 °L ,#FFD878,34,"33,566"
+Floor-Malted Bohemian Pilsner,https://www.brewersfriend.com/fermentables/german-floor-malted-bohemian-pilsner/,German,Grain,Base malt,2 °L ,#FFE699,38,"3,364"
+Floor-Malted Bohemian Pilsner Dk,https://www.brewersfriend.com/fermentables/german-floor-malted-bohemian-pilsner-dk/,German,Grain,Base malt,7 °L ,#EA8F00,38,301
+Floor-Malted Bohemian Wheat,https://www.brewersfriend.com/fermentables/german-floor-malted-bohemian-wheat/,German,Grain,Base malt,2 °L ,#FFD878,38,584
+Gladiator Malt,https://www.brewersfriend.com/fermentables/new-zealand-gladiator-malt/,New Zealand,Grain,Base malt,5 °L ,#F8A600,37.3,441
+Golden Naked Oats,https://www.brewersfriend.com/fermentables/united-kingdom-golden-naked-oats/,United Kingdom,Grain,Raw,10 °L ,#CF6900,33,"4,974"
+Golden Promise,https://www.brewersfriend.com/fermentables/united-kingdom-golden-promise/,United Kingdom,Grain,Base malt,3 °L ,#FFCA5A,37,"19,288"
+Gooseberry,https://www.brewersfriend.com/fermentables/gooseberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.95,33
+Grape,https://www.brewersfriend.com/fermentables/grape/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,7.15,109
+"Grape, concord",https://www.brewersfriend.com/fermentables/grape-concord/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4,13
+Grapefruit,https://www.brewersfriend.com/fermentables/grapefruit/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.75,69
+Grits,https://www.brewersfriend.com/fermentables/grits/,N/A,Adjunct,Raw,1 °L ,#FFF4D4,37,559
+Guanabana,https://www.brewersfriend.com/fermentables/guanabana/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4,3
+Guava,https://www.brewersfriend.com/fermentables/guava/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.8,47
+Halcyon,https://www.brewersfriend.com/fermentables/united-kingdom-halcyon/,United Kingdom,Grain,Base malt,2 °L ,#FFD878,36,548
+Honey,https://www.brewersfriend.com/fermentables/honey/,N/A,Sugar,Sugar,2 °L ,#FFD878,42,"25,693"
+Honey (Buckwheat),https://www.brewersfriend.com/fermentables/honey-buckwheat/,N/A,Sugar,Sugar,2 °L ,#FFD878,42,530
+Honey Malt,https://www.brewersfriend.com/fermentables/canadian-honey-malt/,Canadian,Grain,Base malt,25 °L ,#520907,37,"26,476"
+Honeydew Melon,https://www.brewersfriend.com/fermentables/honeydew-melon/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.5,12
+Invert Sugar,https://www.brewersfriend.com/fermentables/invert-sugar/,N/A,Sugar,Sugar,1 °L ,#FFF4D4,46,"2,246"
+Jackfruit,https://www.brewersfriend.com/fermentables/jackfruit/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,8.3,3
+Kiwi,https://www.brewersfriend.com/fermentables/kiwi/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5.75,22
+Kölsch,https://www.brewersfriend.com/fermentables/german-kolsch/,German,Grain,Base malt,4 °L ,#FBB123,37,787
+Lactose (Milk Sugar),https://www.brewersfriend.com/fermentables/lactose-milk-sugar/,N/A,Sugar,Sugar,1 °L ,#FFF4D4,41,"16,798"
+Lager,https://www.brewersfriend.com/fermentables/united-kingdom-lager/,United Kingdom,Grain,Base malt,1 °L ,#FFE699,38,"2,876"
+Lager Light,https://www.brewersfriend.com/fermentables/new-zealand-lager-light/,New Zealand,Grain,Base malt,1 °L ,#FFE699,37,138
+Lager Malt,https://www.brewersfriend.com/fermentables/ireland-lager-malt/,Ireland,Grain,Base malt,2 °L ,#FFD878,37,259
+Lemon juice,https://www.brewersfriend.com/fermentables/lemon-juice/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1,63
+Light Chocolate Malt,https://www.brewersfriend.com/fermentables/new-zealand-light-chocolate-malt/,New Zealand,Grain,Roasted malt,457 °L ,#1F0506,32.7,344
+Light Crystal Malt,https://www.brewersfriend.com/fermentables/new-zealand-light-crystal-malt/,New Zealand,Grain,Crystal malt,32 °L ,#1F0506,35.4,824
+Light Roasted Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-light-roasted-millet-malt-gluten-free/,American,Grain,Gluten-free malt,7 °L ,#EA8F00,25,62
+Lime,https://www.brewersfriend.com/fermentables/lime/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.45,66
+Lime juice,https://www.brewersfriend.com/fermentables/lime-juice/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.45,19
+Liquid Malt Extract - Amber,https://www.brewersfriend.com/fermentables/liquid-malt-extract-amber/,N/A,Liquid Extract,Extract,10 °L ,#CF6900,35,"13,297"
+Liquid Malt Extract - Dark,https://www.brewersfriend.com/fermentables/liquid-malt-extract-dark/,N/A,Liquid Extract,Extract,30 °L ,#2D0607,35,"7,014"
+Liquid Malt Extract - Extra Light,https://www.brewersfriend.com/fermentables/liquid-malt-extract-extra-light/,N/A,Liquid Extract,Extract,3 °L ,#FFD878,37,"6,430"
+Liquid Malt Extract - Light,https://www.brewersfriend.com/fermentables/liquid-malt-extract-light/,N/A,Liquid Extract,Extract,4 °L ,#FFBF42,35,"33,062"
+Liquid Malt Extract - Maris Otter,https://www.brewersfriend.com/fermentables/liquid-malt-extract-maris-otter/,N/A,Liquid Extract,Extract,4 °L ,#FFBF42,36,"1,946"
+Liquid Malt Extract - Munich,https://www.brewersfriend.com/fermentables/liquid-malt-extract-munich/,N/A,Liquid Extract,Extract,8 °L ,#DE7C00,35,"5,225"
+Liquid Malt Extract - Pilsen,https://www.brewersfriend.com/fermentables/liquid-malt-extract-pilsen/,N/A,Liquid Extract,Extract,2 °L ,#FFD878,35,"10,981"
+Liquid Malt Extract - Rye,https://www.brewersfriend.com/fermentables/liquid-malt-extract-rye/,N/A,Liquid Extract,Extract,9 °L ,#D77200,35,507
+Liquid Malt Extract - Wheat,https://www.brewersfriend.com/fermentables/liquid-malt-extract-wheat/,N/A,Liquid Extract,Extract,3 °L ,#FFCA5A,35,"7,854"
+Loganberry,https://www.brewersfriend.com/fermentables/loganberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.6,3
+Lychee (Litchi),https://www.brewersfriend.com/fermentables/lychee-litchi/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,7.65,9
+Malted Naked Oats,https://www.brewersfriend.com/fermentables/united-kingdom-malted-naked-oats/,United Kingdom,Grain,Base malt,1 °L ,#FFE699,33,"1,751"
+Malted Rye,https://www.brewersfriend.com/fermentables/new-zealand-malted-rye/,New Zealand,Grain,Base malt,3 °L ,#FFCA5A,40.2,279
+Maltodextrin,https://www.brewersfriend.com/fermentables/maltodextrin/,N/A,Sugar,Sugar,0 °L ,#FFF4D4,39,"6,162"
+Mango,https://www.brewersfriend.com/fermentables/mango/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.95,545
+Manuka Smoked Malt,https://www.brewersfriend.com/fermentables/new-zealand-manuka-smoked-malt/,New Zealand,Grain,Base malt,2 °L ,#FFD878,36.8,64
+Maple Sap,https://www.brewersfriend.com/fermentables/maple-sap/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.9,14
+Maple Syrup,https://www.brewersfriend.com/fermentables/maple-syrup/,N/A,Sugar,Sugar,35 °L ,#1F0506,30,"3,112"
+Maple Syrup,https://www.brewersfriend.com/fermentables/maple-syrup/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,29.8,157
+Maris Otter Pale,https://www.brewersfriend.com/fermentables/united-kingdom-maris-otter-pale/,United Kingdom,Grain,Base malt,4 °L ,#FFBF42,38,"110,955"
+Medium Crystal Malt,https://www.brewersfriend.com/fermentables/new-zealand-medium-crystal-malt/,New Zealand,Grain,Crystal malt,56 °L ,#1F0506,35.4,811
+Medium Roasted Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-medium-roasted-millet-malt-gluten-free/,American,Grain,Gluten-free malt,36 °L ,#1F0506,25,49
+Melanoid Malt,https://www.brewersfriend.com/fermentables/finland-melanoid-malt/,Finland,Grain,Roasted malt,27 °L ,#470606,35,"1,103"
+Melanoidin,https://www.brewersfriend.com/fermentables/german-melanoidin/,German,Grain,Roasted malt,25 °L ,#520907,37,"22,966"
+Midnight Wheat Malt,https://www.brewersfriend.com/fermentables/american-midnight-wheat-malt/,American,Grain,Roasted malt,550 °L ,#1F0506,33,"7,815"
+Mild,https://www.brewersfriend.com/fermentables/united-kingdom-mild/,United Kingdom,Grain,Base malt,3 °L ,#FFCA5A,37,"1,084"
+Molasses,https://www.brewersfriend.com/fermentables/molasses/,N/A,Sugar,Sugar,80 °L ,#1F0506,36,"5,382"
+Mulberry,https://www.brewersfriend.com/fermentables/mulberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,6.1,17
+Munich,https://www.brewersfriend.com/fermentables/belgian-munich/,Belgian,Grain,Base malt,6 °L ,#F39C00,38,"13,515"
+Munich,https://www.brewersfriend.com/fermentables/united-kingdom-munich/,United Kingdom,Grain,Base malt,6 °L ,#F39C00,37,"9,773"
+Munich - 60L,https://www.brewersfriend.com/fermentables/american-munich-60l/,American,Grain,Base malt,60 °L ,#1F0506,33,"4,118"
+Munich - Dark 20L,https://www.brewersfriend.com/fermentables/american-munich-dark-20l/,American,Grain,Base malt,20 °L ,#771900,33,"8,627"
+Munich - Light 10L,https://www.brewersfriend.com/fermentables/american-munich-light-10l/,American,Grain,Base malt,10 °L ,#CF6900,33,"41,704"
+Munich Dark,https://www.brewersfriend.com/fermentables/canadian-munich-dark/,Canadian,Grain,Base malt,32 °L ,#1F0506,34,741
+Munich Dark,https://www.brewersfriend.com/fermentables/german-munich-dark/,German,Grain,Base malt,16 °L ,#9B3200,37,"12,833"
+Munich Light,https://www.brewersfriend.com/fermentables/canadian-munich-light/,Canadian,Grain,Base malt,10 °L ,#CF6900,34,"2,611"
+Munich Light,https://www.brewersfriend.com/fermentables/german-munich-light/,German,Grain,Base malt,6 °L ,#F39C00,37,"44,154"
+Munich Malt,https://www.brewersfriend.com/fermentables/finland-munich-malt/,Finland,Grain,Base malt,7 °L ,#EA8F00,36,"2,365"
+Munich Malt,https://www.brewersfriend.com/fermentables/new-zealand-munich-malt/,New Zealand,Grain,Base malt,8 °L ,#DE7C00,36.8,801
+Munich Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-munich-millet-malt-gluten-free/,American,Grain,Gluten-free malt,7 °L ,#EA8F00,25,128
+Nectarine,https://www.brewersfriend.com/fermentables/nectarine/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.4,10
+Oat Malt,https://www.brewersfriend.com/fermentables/united-kingdom-oat-malt/,United Kingdom,Grain,Base malt,2 °L ,#FFD878,28,"4,176"
+Optic,https://www.brewersfriend.com/fermentables/united-kingdom-optic/,United Kingdom,Grain,Base malt,2 °L ,#FFD878,38,709
+Orange,https://www.brewersfriend.com/fermentables/orange/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.1,142
+Orange (Blood Orange),https://www.brewersfriend.com/fermentables/orange-blood-orange/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.05,105
+Orange juice,https://www.brewersfriend.com/fermentables/orange-juice/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.8,96
+Organic Pilsner,https://www.brewersfriend.com/fermentables/new-zealand-organic-pilsner/,New Zealand,Grain,Base malt,2 °L ,#FFE699,37.9,16
+Organic Pilsner Malt,https://www.brewersfriend.com/fermentables/finland-organic-pilsner-malt/,Finland,Grain,Base malt,2 °L ,#FFD878,36,167
+Pale 2-Row,https://www.brewersfriend.com/fermentables/american-pale-2-row/,American,Grain,Base malt,2 °L ,#FFE699,37,"223,120"
+Pale 2-Row,https://www.brewersfriend.com/fermentables/canadian-pale-2-row/,Canadian,Grain,Base malt,2 °L ,#FFE699,36,"15,656"
+Pale 2-Row,https://www.brewersfriend.com/fermentables/united-kingdom-pale-2-row/,United Kingdom,Grain,Base malt,3 °L ,#FFD878,38,"21,118"
+Pale 2-Row - Toasted,https://www.brewersfriend.com/fermentables/american-pale-2-row-toasted/,American,Grain,Base malt,30 °L ,#2D0607,33,"2,215"
+Pale 6-Row,https://www.brewersfriend.com/fermentables/american-pale-6-row/,American,Grain,Base malt,2 °L ,#FFE699,35,"8,683"
+Pale Ale,https://www.brewersfriend.com/fermentables/american-pale-ale/,American,Grain,Base malt,4 °L ,#FFBF42,37,"28,136"
+Pale Ale,https://www.brewersfriend.com/fermentables/belgian-pale-ale/,Belgian,Grain,Base malt,3 °L ,#FFCA5A,38,"14,837"
+Pale Ale,https://www.brewersfriend.com/fermentables/german-pale-ale/,German,Grain,Base malt,2 °L ,#FFD878,39,"27,054"
+Pale Ale Malt,https://www.brewersfriend.com/fermentables/finland-pale-ale-malt/,Finland,Grain,Base malt,2 °L ,#FFD878,36,"5,204"
+Pale Chocolate,https://www.brewersfriend.com/fermentables/united-kingdom-pale-chocolate/,United Kingdom,Grain,Roasted malt,207 °L ,#1F0506,33,"14,686"
+Pale Millet Malt - Gluten Free,https://www.brewersfriend.com/fermentables/american-pale-millet-malt-gluten-free/,American,Grain,Gluten-free malt,2 °L ,#FFE699,30,215
+Pale Wheat,https://www.brewersfriend.com/fermentables/canadian-pale-wheat/,Canadian,Grain,Base malt,2 °L ,#FFD878,36,"3,530"
+Pale Wheat,https://www.brewersfriend.com/fermentables/german-pale-wheat/,German,Grain,Base malt,2 °L ,#FFE699,39,"7,924"
+Papaya,https://www.brewersfriend.com/fermentables/papaya/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.9,13
+Passionfruit,https://www.brewersfriend.com/fermentables/passionfruit/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5,121
+Peach,https://www.brewersfriend.com/fermentables/peach/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.05,322
+Pear,https://www.brewersfriend.com/fermentables/pear/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.5,119
+Pearl,https://www.brewersfriend.com/fermentables/united-kingdom-pearl/,United Kingdom,Grain,Base malt,2 °L ,#FFD878,37,"2,421"
+Peated Malt,https://www.brewersfriend.com/fermentables/united-kingdom-peated-malt/,United Kingdom,Grain,Base malt,3 °L ,#FFD878,38,"2,472"
+Persimmon,https://www.brewersfriend.com/fermentables/persimmon/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,6.3,25
+Pilsen,https://www.brewersfriend.com/fermentables/united-kingdom-pilsen/,United Kingdom,Grain,Base malt,2 °L ,#FFE699,36,"3,606"
+Pilsner,https://www.brewersfriend.com/fermentables/american-pilsner/,American,Grain,Base malt,2 °L ,#FFE699,37,"35,630"
+Pilsner,https://www.brewersfriend.com/fermentables/belgian-pilsner/,Belgian,Grain,Base malt,2 °L ,#FFE699,37,"35,019"
+Pilsner,https://www.brewersfriend.com/fermentables/german-pilsner/,German,Grain,Base malt,2 °L ,#FFE699,38,"68,663"
+Pilsner Malt,https://www.brewersfriend.com/fermentables/finland-pilsner-malt/,Finland,Grain,Base malt,2 °L ,#FFD878,37,"3,832"
+Pilsner Malt,https://www.brewersfriend.com/fermentables/new-zealand-pilsner-malt/,New Zealand,Grain,Base malt,2 °L ,#FFD878,37.3,927
+Pineapple,https://www.brewersfriend.com/fermentables/pineapple/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5.85,215
+Plum,https://www.brewersfriend.com/fermentables/plum/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.95,129
+Pomegranate,https://www.brewersfriend.com/fermentables/pomegranate/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,5.2,32
+Prickly Pear,https://www.brewersfriend.com/fermentables/prickly-pear/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.95,12
+Prunes (dried),https://www.brewersfriend.com/fermentables/prunes-dried/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,19.8,23
+Pumpkin (canned),https://www.brewersfriend.com/fermentables/pumpkin-canned/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1,394
+Pumpkin (fresh),https://www.brewersfriend.com/fermentables/pumpkin-fresh/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1,300
+Quince,https://www.brewersfriend.com/fermentables/quince/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.45,7
+Raisins (dried),https://www.brewersfriend.com/fermentables/raisins-dried/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,29.25,213
+Raspberry,https://www.brewersfriend.com/fermentables/raspberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.15,475
+"Raspberry, black",https://www.brewersfriend.com/fermentables/raspberry-black/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.8,15
+"Raspberry, red",https://www.brewersfriend.com/fermentables/raspberry-red/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.3,186
+Red Back Malt,https://www.brewersfriend.com/fermentables/new-zealand-red-back-malt/,New Zealand,Grain,Roasted malt,33 °L ,#1F0506,35.4,222
+Red Wheat,https://www.brewersfriend.com/fermentables/american-red-wheat/,American,Grain,Base malt,3 °L ,#FFD878,38,"7,984"
+Red X,https://www.brewersfriend.com/fermentables/german-red-x/,German,Grain,Base malt,12 °L ,#BB5100,36,"2,735"
+Rhubarb,https://www.brewersfriend.com/fermentables/rhubarb/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,0.4,59
+Rice Hulls,https://www.brewersfriend.com/fermentables/rice-hulls/,N/A,Adjunct,Other,0 °L ,#FFF4D4,0,"20,185"
+Rice Syrup Solids,https://www.brewersfriend.com/fermentables/rice-syrup-solids/,N/A,Dry Extract,Raw,1 °L ,#FFF4D4,37,"1,428"
+Roast Barley,https://www.brewersfriend.com/fermentables/new-zealand-roast-barley/,New Zealand,Grain,Roasted malt,736 °L ,#1F0506,32.7,275
+Roasted Barley,https://www.brewersfriend.com/fermentables/american-roasted-barley/,American,Grain,Roasted malt,300 °L ,#1F0506,33,"34,309"
+Roasted Barley,https://www.brewersfriend.com/fermentables/belgian-roasted-barley/,Belgian,Grain,Roasted malt,575 °L ,#1F0506,30,"3,585"
+Roasted Barley,https://www.brewersfriend.com/fermentables/united-kingdom-roasted-barley/,United Kingdom,Grain,Roasted malt,550 °L ,#1F0506,29,"20,536"
+Roasted Wheat,https://www.brewersfriend.com/fermentables/new-zealand-roasted-wheat/,New Zealand,Grain,Roasted malt,279 °L ,#1F0506,33.6,170
+Rolled Barley,https://www.brewersfriend.com/fermentables/new-zealand-rolled-barley/,New Zealand,Adjunct,Raw,2 °L ,#FFE699,35.4,33
+Rolled Oats,https://www.brewersfriend.com/fermentables/rolled-oats/,N/A,Adjunct,Raw,2 °L ,#FFD878,33,"9,996"
+Rolled Oats,https://www.brewersfriend.com/fermentables/new-zealand-rolled-oats/,New Zealand,Adjunct,Raw,1 °L ,#FFE699,12.4,212
+Rye,https://www.brewersfriend.com/fermentables/american-rye/,American,Grain,Base malt,4 °L ,#FFBF42,38,"16,607"
+Rye,https://www.brewersfriend.com/fermentables/german-rye/,German,Grain,Base malt,4 °L ,#FFBF42,38,"6,814"
+Shepherds Delight Malt,https://www.brewersfriend.com/fermentables/new-zealand-shepherds-delight-malt/,New Zealand,Grain,Roasted malt,152 °L ,#1F0506,36.5,187
+Smoked Malt,https://www.brewersfriend.com/fermentables/american-smoked-malt/,American,Grain,Base malt,5 °L ,#F8A600,37,"5,102"
+Smoked Malt,https://www.brewersfriend.com/fermentables/german-smoked-malt/,German,Grain,Base malt,3 °L ,#FFCA5A,37,"5,020"
+Soft Candi Sugar - Blond,https://www.brewersfriend.com/fermentables/soft-candi-sugar-blond/,N/A,Sugar,Sugar,5 °L ,#F8A600,38,962
+Soft Candi Sugar - Brown,https://www.brewersfriend.com/fermentables/soft-candi-sugar-brown/,N/A,Sugar,Sugar,60 °L ,#1F0506,38,603
+Sour Grapes Malt,https://www.brewersfriend.com/fermentables/new-zealand-sour-grapes-malt/,New Zealand,Grain,Base malt,2 °L ,#FFD878,34,199
+Special B,https://www.brewersfriend.com/fermentables/belgian-special-b/,Belgian,Grain,Roasted malt,115 °L ,#1F0506,34,"28,707"
+Special Roast,https://www.brewersfriend.com/fermentables/american-special-roast/,American,Grain,Roasted malt,50 °L ,#1F0506,33,"7,458"
+Spelt Malt,https://www.brewersfriend.com/fermentables/german-spelt-malt/,German,Grain,Base malt,2 °L ,#FFD878,37,"1,524"
+Stout Malt,https://www.brewersfriend.com/fermentables/ireland-stout-malt/,Ireland,Grain,Base malt,2 °L ,#FFD878,37,452
+Strawberry,https://www.brewersfriend.com/fermentables/strawberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.15,314
+Sultanas,https://www.brewersfriend.com/fermentables/sultanas/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,8.55,7
+Supernova Malt,https://www.brewersfriend.com/fermentables/new-zealand-supernova-malt/,New Zealand,Grain,Roasted malt,58 °L ,#1F0506,37.4,144
+Tangelo,https://www.brewersfriend.com/fermentables/tangelo/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,3.35,9
+Tangerine,https://www.brewersfriend.com/fermentables/tangerine/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.95,36
+Toffee Malt,https://www.brewersfriend.com/fermentables/new-zealand-toffee-malt/,New Zealand,Grain,Roasted malt,5 °L ,#F8A600,38.8,429
+Tomato,https://www.brewersfriend.com/fermentables/tomato/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,1.25,38
+Torrified Barley,https://www.brewersfriend.com/fermentables/torrified-barley/,N/A,Adjunct,Raw,2 °L ,#FFD878,36,598
+Torrified Wheat,https://www.brewersfriend.com/fermentables/torrified-wheat/,N/A,Adjunct,Raw,2 °L ,#FFD878,36,"13,801"
+Turbinado,https://www.brewersfriend.com/fermentables/turbinado/,N/A,Sugar,Sugar,10 °L ,#CF6900,44,"4,587"
+Unmalted Wheat,https://www.brewersfriend.com/fermentables/belgian-unmalted-wheat/,Belgian,Grain,Raw,2 °L ,#FFD878,36,"2,273"
+Victory,https://www.brewersfriend.com/fermentables/american-victory/,American,Grain,Roasted malt,28 °L ,#3D0708,34,"28,199"
+Vienna,https://www.brewersfriend.com/fermentables/american-vienna/,American,Grain,Base malt,4 °L ,#FFBF42,35,"30,056"
+Vienna,https://www.brewersfriend.com/fermentables/german-vienna/,German,Grain,Base malt,4 °L ,#FFBF42,37,"36,585"
+Vienna Malt,https://www.brewersfriend.com/fermentables/finland-vienna-malt/,Finland,Grain,Base malt,3 °L ,#FFCA5A,36,"1,289"
+Vienna Malt,https://www.brewersfriend.com/fermentables/new-zealand-vienna-malt/,New Zealand,Grain,Base malt,3 °L ,#FFBF42,39.1,567
+Watermelon,https://www.brewersfriend.com/fermentables/watermelon/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,4.05,84
+Wheat,https://www.brewersfriend.com/fermentables/american-wheat/,American,Grain,Base malt,2 °L ,#FFE699,38,"29,479"
+Wheat,https://www.brewersfriend.com/fermentables/belgian-wheat/,Belgian,Grain,Base malt,2 °L ,#FFE699,38,"9,544"
+Wheat,https://www.brewersfriend.com/fermentables/united-kingdom-wheat/,United Kingdom,Grain,Base malt,2 °L ,#FFD878,37,"9,109"
+Wheat Malt,https://www.brewersfriend.com/fermentables/german-wheat-malt/,German,Grain,Base malt,2 °L ,#FFD878,37,"30,428"
+Wheat Malt,https://www.brewersfriend.com/fermentables/finland-wheat-malt/,Finland,Grain,Base malt,2 °L ,#FFD878,38,"2,861"
+Wheat Malt,https://www.brewersfriend.com/fermentables/new-zealand-wheat-malt/,New Zealand,Grain,Base malt,2 °L ,#FFD878,35.4,"1,097"
+White Sorghum Syrup  - Gluten Free,https://www.brewersfriend.com/fermentables/white-sorghum-syrup-gluten-free/,N/A,Sugar,Sugar,2 °L ,#FFE699,37,"1,129"
+White Wheat,https://www.brewersfriend.com/fermentables/american-white-wheat/,American,Grain,Base malt,3 °L ,#FFCA5A,40,"39,914"
+Youngberry,https://www.brewersfriend.com/fermentables/youngberry/,N/A,Fruit,Fruit,0 °L ,#FFF4D4,2.5,2
