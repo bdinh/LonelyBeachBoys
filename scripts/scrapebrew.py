@@ -35,8 +35,7 @@ def scrape_brewer_friends(csv_name, page_max):
         count += 1
     write_beer_recipes_to_csv(processed_rows, csv_name)
     print("Completed writing beer recipes to CSV. Data can be found: data/raw/" + csv_name)
-    
-    
+
 def write_beer_recipes_to_csv(processed_rows, name):
     """
         write_beer_recipes_to_csv takes in a processed_rows array and writes the data out into a CSV
@@ -53,7 +52,6 @@ def write_beer_recipes_to_csv(processed_rows, name):
         writer.writeheader()
         for row in processed_rows:
             writer.writerow(row)
-    
 
 def get_url_page_table_rows(url):
     """
@@ -217,7 +215,6 @@ def process_url_page_table_rows(rows):
         result.append(row)
     return result
 
-
 def scrape_fermentables_table():
     resource = "/fermentables/"
     fermentable_url = base_url + resource
@@ -274,7 +271,6 @@ def scrape_fermentables_table():
         fermentables_result.append(fermentable)
     return fermentables_result
 
-
 def write_fermentables_to_csv(fermentables):
     with open("data/raw/fermentables.csv", mode='w', encoding='utf-8') as csv_file:
         field_names = ["name", "url", "country", "category", "type",
@@ -283,8 +279,7 @@ def write_fermentables_to_csv(fermentables):
         writer.writeheader()
         for row in fermentables:
             writer.writerow(row)
-            
-            
+
 def write_detail_recipe_to_csv(recipes_list, name):
     """
         write_detail_recipe_to_csv takes in a recipes_list array and writes the data out into a CSV
@@ -330,7 +325,7 @@ def scrape_recipes_details(title_url_list, csv_detail, csv_review):
     """
         scrape_recipes_details maintains the control flow structure that allows for the scraping of 
         4954 pages of beer recipes. This function looks to extract detailed information for each beer recipe.
-        Information such as ratings, reviews and view count that will be combined with the orignal set of information
+        Information such as ratings, reviews and view count that will be combined with the original set of information
         extracted.
         Args:
             title_url_list (array): An array of title urls that will be use to scrape more details about the 
@@ -347,9 +342,7 @@ def scrape_recipes_details(title_url_list, csv_detail, csv_review):
     print("Completed writing detailed beer recipes to CSV. Data can be found: data/raw/" + csv_detail)
     write_recipe_reviews_to_csv(reviews, csv_review)
     print("Completed writing beer recipes reviews to CSV. Data can be found: data/raw/" + csv_review)
-#     return scrape_detail_page(title_url)
 
-   
 
 def scrape_detail_page(page_url):
     """
