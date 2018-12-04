@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c639831-bfdc-4996-acf2-d7158b268d9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/brewscraper-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/brewscraper-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data-exploration-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data-exploration-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brewscraper.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/brewscraper.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data-exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data-exploration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parallel-crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parallel-reviews.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/scrapebrew.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/scrapebrew.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +15,7 @@
     <session id="-1974265613">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -108,6 +104,11 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/web/hops-n-props/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />

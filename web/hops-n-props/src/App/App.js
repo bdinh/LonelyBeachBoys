@@ -17,16 +17,16 @@ class App extends Component {
             <Navbar inverse collapseOnSelect>
               <Navbar.Header>
                 <Navbar.Brand>
-                  <Link to="/">Hops 'n Props</Link>
+                  <Link to="/" id="brand">Hops 'n Props</Link>
                 </Navbar.Brand>
                 <Navbar.Toggle />
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem eventKey={1} componentClass='span'><Link to="/">Homepage</Link></NavItem>
-                  <NavItem eventKey={2} componentClass='span'><Link to="/explore">Exploration</Link></NavItem>
-                  <NavItem eventKey={3} componentClass='span'><Link to="/interact">Interactive Model</Link></NavItem>
-                  <NavItem eventKey={4} componentClass='span'><Link to="/results">Results</Link></NavItem>
+                  <NavItem eventKey={1} componentClass='span'><Link className="nav-links" to="/">Homepage</Link></NavItem>
+                  <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Exploration</Link></NavItem>
+                  <NavItem eventKey={3} componentClass='span'><Link className="nav-links" to="/interact">Interactive Model</Link></NavItem>
+                  <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/results">Results</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
@@ -41,8 +41,10 @@ class App extends Component {
             </Switch>
           </main>
 
-          <footer>
-            <div>This is a footer</div>
+          <footer className="footer">
+            <div className="manual-container">
+              <span className="footer-text">This is a footer</span>
+            </div>
           </footer>
         </div>
       </Router>
