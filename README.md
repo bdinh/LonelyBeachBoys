@@ -3,6 +3,8 @@
 
 ## Project Description
 
+You can view our final project resource [here](https://bdinh.github.io/LonelyBeachBoys/#/)! Enjoy :)
+
 ### Overview
 
 [Homebrewing](https://en.wikipedia.org/wiki/Homebrewing) is a hobby that has been gaining traction recently - the activity has a long and storied history, stretching back thousands of years, and is now embraced by people in the lab and garage alike. There are many different approaches, starting points, and strategies, but it all boils down to taking an unfermented grain derivative and turning it into beer (as if, as was previously thought, by magic). As it turns out, this is a rather complicated undertaking, and there are many communities devoted to figuring out how to brew good beer. These communities can be found everywhere from the university, to the dive bar, and the pursuit of brewing perfection pervades research papers as much as online forums.
