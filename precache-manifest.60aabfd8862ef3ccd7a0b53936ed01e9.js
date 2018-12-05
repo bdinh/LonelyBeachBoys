@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/LonelyBeachBoys/static/js/runtime~main.42d478be.js"
   },
   {
-    "revision": "0b026d2dedc31d51dbcb",
-    "url": "/LonelyBeachBoys/static/js/main.0b026d2d.chunk.js"
+    "revision": "fe435983b844ebe72e25",
+    "url": "/LonelyBeachBoys/static/js/main.fe435983.chunk.js"
   },
   {
     "revision": "c4e45eda8f843389e8f6",
     "url": "/LonelyBeachBoys/static/js/1.c4e45eda.chunk.js"
   },
   {
-    "revision": "0b026d2dedc31d51dbcb",
+    "revision": "fe435983b844ebe72e25",
     "url": "/LonelyBeachBoys/static/css/main.dcce2d95.chunk.css"
   },
   {
-    "revision": "ad5968225d57d6e59b0ad0ddc2287ed9",
+    "revision": "7ce8d40c2f96e736f2011315f29bbf9c",
     "url": "/LonelyBeachBoys/index.html"
   }
 ];
