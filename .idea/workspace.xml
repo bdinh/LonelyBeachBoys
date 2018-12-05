@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c639831-bfdc-4996-acf2-d7158b268d9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data-exploration-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data-exploration-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data-exploration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data-exploration.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Classifiers.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/models/Classifiers.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +32,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="js" value="8" />
+          <entry key="css" value="5" />
+          <entry key="js" value="13" />
           <entry key="json" value="1" />
           <entry key="png" value="1" />
           <entry key="py" value="3" />
@@ -36,101 +41,76 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
+          <entry key="CSS" value="5" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="8" />
+          <entry key="JavaScript" value="13" />
           <entry key="Python" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="22" />
-          <entry key="js" value="1592" />
+          <entry key="css" value="30" />
+          <entry key="js" value="3194" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="22" />
-          <entry key="JavaScript" value="1592" />
+          <entry key="CSS" value="30" />
+          <entry key="JavaScript" value="3194" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2415">
-              <caret line="123" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="123" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="88" lean-forward="true" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4094">
+                  <caret line="178" column="62" lean-forward="true" selection-start-line="178" selection-start-column="62" selection-end-line="178" selection-end-column="62" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="451">
+                  <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3060">
+                  <caret line="179" column="152" selection-start-line="179" selection-start-column="152" selection-end-line="179" selection-end-column="152" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,6 +120,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>test</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -147,10 +132,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scripts/scrapebrew.py" />
-        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css" />
         <option value="$PROJECT_DIR$/web/hops-n-props/src/App/App.js" />
-        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js" />
         <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js" />
+        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js" />
+        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js" />
+        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css" />
+        <option value="$PROJECT_DIR$/web/hops-n-props/src/App/App.css" />
         <option value="$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js" />
       </list>
     </option>
@@ -303,7 +290,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543989455608" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543999932885" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -340,18 +327,18 @@
       <workItem from="1543962354289" duration="31000" />
       <workItem from="1543962402518" duration="858000" />
       <workItem from="1543963312607" duration="42000" />
-      <workItem from="1543963367572" duration="9036000" />
+      <workItem from="1543963367572" duration="15700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9967000" />
+    <option name="totallyTimeSpent" value="16631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26190478" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1971917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -369,7 +356,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32987553" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33091286" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -416,20 +403,13 @@
     <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Exploration/Exploration.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js">
+    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="17" column="88" lean-forward="true" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -443,30 +423,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js">
+    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="123" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="123" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
+        <state relative-caret-position="47">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Homepage/Homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="97" column="30" selection-start-line="97" selection-start-column="30" selection-end-line="97" selection-end-column="30" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/DataPreparation/DataPreparation.js">
+    <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/InteractiveModel/InteractiveModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="88" lean-forward="true" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+        <state relative-caret-position="4094">
+          <caret line="178" column="62" lean-forward="true" selection-start-line="178" selection-start-column="62" selection-end-line="178" selection-end-column="62" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -475,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/hops-n-props/src/App/pages/Results/Results.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        <state relative-caret-position="451">
+          <caret line="50" column="59" selection-start-line="50" selection-start-column="59" selection-end-line="50" selection-end-column="59" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

@@ -33,19 +33,28 @@ export class Results extends Component {
                                 Network Regressor. We ran grid search on all of these models to select the best parameters
                                 and fine tune the model. However, what resulted was pretty low scores across the board.
                             </p>
-                            <p>Ridge regression gave us a score of 0.02% while SVR fit such a poor model that we received a negative score. The Neural Net Regression yielded an accuracy of 3%, and our best model, a , got 10% accuracy.
+                            <p>Ridge regression gave us a score of 0.02% while SVR fit such a poor model that we received
+                                a negative score. The Neural Net Regression yielded an accuracy of 3%, and our best model,
+                                a , got 10% accuracy.
                             </p>
                             <p>
-                                We made the collective decision to transform our outcome variable into a categorical variable. We rounded the rating value to the nearest fourth. For example, 4.14 would be rounded to 4.25. This meant that we broke up the scale of 0 to 5 into 20 even categories. All ratings would fall under one of these bins.
+                                We made the collective decision to transform our outcome variable into a categorical
+                                variable. We rounded the rating value to the nearest fourth. For example, 4.14 would be
+                                rounded to 4.25. This meant that we broke up the scale of 0 to 5 into 20 even categories.
+                                All ratings would fall under one of these bins.
                             </p>
                             <p>
-                                Once this was done, we decided to use classifier models to try to predict the category the ratings belonged in, instead of a continuous number. We used a KNN classifier, which resulted in a 53.05% score, which was a massive improvement, and led us to our final model.
+                                Once this was done, we decided to use classifier models to try to predict the category
+                                the ratings belonged in, instead of a continuous number. We used a KNN classifier, which
+                                resulted in a 53.05% score, which was a massive improvement, and led us to our final model.
                             </p>
+                            <img src={"./img/model-bar.jpeg"}/>
                         </Col>
 
                         <Col xs={12}>
                             <h2>The Model</h2>
-                            <p>Our final model was a Neural Network Classifier, which achieved a 58.54% accuracy using the following hyperparameters:</p>
+                            <p>Our final model was a Neural Network Classifier, which achieved a 58.54% accuracy using
+                                the following hyperparameters:</p>
                                 <ul>
                                     <li>Hidden_layer_sizes: 100</li>
                                     <li>Activation: relu</li>
