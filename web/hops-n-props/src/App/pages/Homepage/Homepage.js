@@ -3,7 +3,7 @@ import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
 import './Homepage.css';
 import { TeamCard } from './components/TeamCard';
 
-const team = [{name: "Sam Otto", img:"./img/me_1.jpg", alt:"Sam standing by tree"}, {name: "Fergus", img:"./img/fergus_1.png", alt:"Fergus looking dapper"}, {name: "Fergus Two: Electric Boogaloo", img:"./img/fergus_1.png", alt:"Fergus looking dapper"}, {name: "Fergus Three", img:"./img/fergus_1.png", alt:"Fergus looking dapper"}];
+const team = [{name: "Sam Otto", img:"./img/me_1.jpg", alt:"Sam standing by tree"}, {name: "Namam Mehra", img:"./img/namam.jpeg", alt:"Fergus looking dapper"}, {name: "Josiah Chapman", img:"./img/", alt:"Fergus looking dapper"}, {name: "Bao Dinh", img:"./img/", alt:"Fergus looking dapper"}];
 
 export class Homepage extends Component {
 
@@ -91,32 +91,7 @@ export class Homepage extends Component {
                                 recipe might turn out before devoting the time and money required to brew it.
                             </p>
                         </Col>
-                        <Col xs={12}>
-                            <h2>Data</h2>
-                            <p>
-                                We scraped all our data from brewersfriend.com, a website dedicated to sharing and
-                                rating homebrew recipes. Anyone can add or vote on a recipe, and the available recipes
-                                are not curated.
-                            </p>
-                            <h4>Data Collection</h4>
-                            <p>
-                                Add data scraping techniques here later
-                            </p>
-                            <h4>Feature Abstraction and Engineering</h4>
-                            <p>
-                                The final structure of the dataframe varied in some ways from the data on Brewers Friend.
-                                Many of the variables we wanted to train our model on were not readily quantifiable. In
-                                order to represent this data, we addressed each recipe component in turn and came up
-                                with a way to incorporate it into our dataframe.
-                            </p>
-                            <p>
-                                The Fermentables section lists the many substances which make up the majority of the mash.
-                                These substances provide the yeast with sugar, which it turns into ethanol, carbon dioxide,
-                                and a number of other by-products. A typical fermentables section on Brewers Friend looks
-                                like the following:
-                            </p>
 
-                        </Col>
                         <Col xs={12}>
                             <h2>Sources</h2>
                             <p>Marsili, R. T., Laskonis, L. C., and Kenaan, C. (2007) Evaluation of PDMS-Based
@@ -134,11 +109,17 @@ export class Homepage extends Component {
                             </p>
                         </Col>
                         <Col xs={12}>
+                            <h2>Our Work</h2>
+                            <p>Our work is documented within this <a href={"https://github.com/bdinh/LonelyBeachBoys"}>Github Repository</a>. Feel free to provide any
+                            feedback or suggestions.</p>
+                        </Col>
+                        <Col xs={12}>
                             <h2>Needed for project:</h2>
                             <p>The purpose of the project, source of the data, and any pertinent information about the
                                 topic area are introduced. You may also want to include links to the code, or
                                 information about the team.</p>
                         </Col>
+
                     </Row>
                 </Grid>
 
