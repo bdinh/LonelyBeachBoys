@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './InteractiveModel.css';
-import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid, Glyphicon } from 'react-bootstrap';
+import { Form, Button, ButtonToolbar, ButtonGroup, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid, Glyphicon } from 'react-bootstrap';
 
 const featTextForms =
     [[{ id: "abv-form", name: "abv", label: "Alcohol by Volume (ABV)" }, { id: "ibu-form", name: "ibu", label: "International Bittering Units (IBU)" }],
@@ -199,10 +199,10 @@ export class InteractiveModel extends Component {
             og: "" + Math.round(this.getRandomArbitrary(1.05, 1.08) * 100) / 100,
             fg: "" + Math.round(this.getRandomArbitrary(1.009, 1.02) * 100) / 100,
             gravDif: "" + Math.round(this.getRandomArbitrary(.01, 2) * 100) / 100,
-            boil: "" + Math.round(this.getRandomArbitrary(30, 90)* 100) / 100,
+            boil: "" + Math.round(this.getRandomArbitrary(30, 90) * 100) / 100,
             efficiency: "" + Math.round(this.getRandomArbitrary(60, 70) * 100) / 100,
             totalFerm: "" + Math.round(this.getRandomArbitrary(5, 20) * 100) / 100,
-            baseMalt: "" + Math.round(this.getRandomArbitrary(4, 20)* 100) / 100,
+            baseMalt: "" + Math.round(this.getRandomArbitrary(4, 20) * 100) / 100,
             crystalMalt: "0",
             roastedMalt: "0",
             otherFerm: "0",
@@ -218,18 +218,6 @@ export class InteractiveModel extends Component {
             attenRate: "" + Math.round(this.getRandomArbitrary(72, 83) * 100) / 100,
         });
 
-        // featSelectForms.forEach((group) => {
-        //     group.forEach((item) => {
-        //         if (item.options === "default") {
-        //             let array = ["yes", "no"];
-        //             let option = array[this.getRandomIntInclusive(1)];
-        //             this.setState({ [item.name]: option });
-        //         } else if (item.id !== "none") {
-        //             let option = item.options[this.getRandomIntInclusive(item.options.length - 1)].value;
-        //             this.setState({ [item.name]: option });
-        //         }
-        //     })
-        // })
     }
 
     render() {
@@ -312,6 +300,16 @@ export class InteractiveModel extends Component {
                         })
                     }
                 </Form>
+
+                <ButtonToolbar>
+                    <ButtonGroup bsSize="large">
+                        <Button>One Star Preset</Button>
+                        <Button>Two Star Preset</Button>
+                        <Button>Three Star Preset</Button>
+                        <Button>Four Star Preset</Button>
+                        <Button>Five Star Preset</Button>
+                    </ButtonGroup>
+                </ButtonToolbar>
 
                 <ButtonToolbar className="forms-buttons">
                     <Button bsStyle="warning" bsSize="large" className="run-button" onClick={this.generateRandomValues} > Get Started </Button>
