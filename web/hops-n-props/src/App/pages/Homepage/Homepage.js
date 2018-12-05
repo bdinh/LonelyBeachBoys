@@ -12,7 +12,7 @@ export class Homepage extends Component {
             <div>
                 <Jumbotron>
                     <Grid>
-                        <Row className="show-grid">
+                        <Row>
                             <Col xs={12} md={6}>
                                 <h1>Question:</h1>
                             </Col>
@@ -26,7 +26,7 @@ export class Homepage extends Component {
                 </Jumbotron>
 
                 <Grid>
-                    <Row className="show-grid">
+                    <Row>
                         <Col xs={12}>
                             <h2>Background</h2>
                             <p>Homebrewing is a hobby that has been gaining traction recently - the activity has a long
@@ -144,12 +144,12 @@ export class Homepage extends Component {
 
                 <div className="div-panel">
                     <Grid>
-                        <Row className="show-grid">
+                        <Row>
                             <Col xs={12}>
                                 <h1 className="panel-heading">Meet the Team</h1>
                             </Col>
                         </Row>
-                        <Row className="show-grid">
+                        <Row>
                             { team.map((member, index) => { return <TeamCard key={"member" + index} member={member} /> }) }
                         </Row>
                     </Grid>
