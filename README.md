@@ -3,6 +3,8 @@
 
 ## Project Description
 
+### Final Resource
+
 You can view our final project resource [here](https://bdinh.github.io/LonelyBeachBoys/#/)! Enjoy :)
 
 ### Overview
