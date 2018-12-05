@@ -7,7 +7,7 @@ export class TeamCard extends Component {
             <Col xs={6} md={3}>
                 <Panel className="team-intro">
                     <Panel.Body>
-                        <Row className="show-grid">
+                        <Row>
                             <Col xs={12}>
                                 <img className="rounded-circle" src={this.props.member.img} alt={this.props.member.alt} />
                             </Col>
