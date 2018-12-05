@@ -1,39 +1,40 @@
 import React, { Component } from 'react';
 import './InteractiveModel.css';
-import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid } from 'react-bootstrap';
+import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid, Glyphicon } from 'react-bootstrap';
 
 const featTextForms =
     [[{ id: "abv-form", name: "abv", label: "Alcohol by Volume (ABV)" }, { id: "ibu-form", name: "ibu", label: "International Bittering Units (IBU)" }],
     [{ id: "og-form", name: "og", label: "Original Gravity" }, { id: "fg-form", name: "fg", label: "Final Gravity" }],
     [{ id: "efficiency-form", name: "efficiency", label: "Efficiency" }, { id: "ferm-weight-form", name: "totalFerm", label: "Total Fermentable Weight (lb.)" }],
-        [{ id: "malt-form", name: "baseMalt", label: "Base Malt Weight (lb.)" }, { id: "crystal-weight-form", name: "crystalMalt", label: "Crystal Malt Weight (lb.)" }],
-        [{ id: "roasted-weight-form", name: "roastedMalt", label: "Roasted Malt Weight (lb.)" }, { id: "other-weight-form", name: "otherFerm", label: "Other Fermentables Weight (lb.)" }],
-        [{ id: "extract-weight-form", name: "extract", label: "Extract Weight (lb.)" }, { id: "sugar-weight-form", name: "sugars", label: "Sugars Weight (lb.)" }],
-        [{ id: "raw-weight-form", name: "rawFerm", label: "Raw Fermentables Weight (lb.)" }, { id: "accidulated-weight-form", name: "accidulatedMalt", label: "Accidulated Malt Weight (lb.)" }],
-        [{ id: "fruit-weight-form", name: "fruitFerm", label: "Fruit Fermentables Weight (lb.)" }, { id: "gluten-free-weight-form", name: "glutenFreeMalt", label: "Gluten-free Malt Weight (lb.)" }],
-        [{ id: "pellet-weight-form", name: "pelletHops", label: "Pellet Hops Weight (lb.)" }, { id: "whole-weight-form", name: "wholeHops", label: "Whole Hops Weight (lb.)" }],
-        [{ id: "plug-weight-form", name: "plugHops", label: "Plug Hops Weight (lb.)" }, { id: "attenuation-form", name: "attenRate", label: "Attenuation Rate" }],
-        [{ id: "boil-form", name: "boil", label: "Boil Time (Minutes)" }, {id: "none", name: "", label: ""}]]
-const featSelectForms = [[{ id: "flocculation", name: "flocculation", label: "Flocculation Rate", options: [{ value: "low", display: "Low" }, { value: "medium", display: "Medium" }, { value: "high", display: "High" }]}, { id: "method-form", name: "method", label: "Method", options: [{ value: "all_grain", display: "All Grain" }, { value: "extract", display: "Extract" }, { value: "biab", display: "BIAB" }, { value: "partial_mash", display: "Partial Mash" }] }],
-    [{ id: "spice-form", name: "containSpice", label: "Contains Spices", options: "default" }, { id: "water-form", name: "containWater", label: "Contains Water Agents", options: "default" }],
-    [{ id: "other-ingredients-form", name: "containOther", label: "Contains Other (non-standard) Ingredients", options: "default" }, { id: "fining-form", name: "containFinings", label: "Contains Added Finings", options: "default" }],
-    [{ id: "added-flavors-form", name: "containFlavors", label: "Contains Added Flavors", options: "default" }, { id: "added-herbs-form", name: "containHerbs", label: "Contains Added Herbs", options: "default" }],
-    [{ id: "yeast-form", name: "yeastType", label: "Yeast Type", options: [{ value: "liquid", display: "Liquid" }, { value: "dry", display: "Dry" }] }, { id: "none", name: "", label: "", options: "default" }]]
+    [{ id: "malt-form", name: "baseMalt", label: "Base Malt Weight (lb.)" }, { id: "crystal-weight-form", name: "crystalMalt", label: "Crystal Malt Weight (lb.)" }],
+    [{ id: "roasted-weight-form", name: "roastedMalt", label: "Roasted Malt Weight (lb.)" }, { id: "other-weight-form", name: "otherFerm", label: "Other Fermentables Weight (lb.)" }],
+    [{ id: "extract-weight-form", name: "extract", label: "Extract Weight (lb.)" }, { id: "sugar-weight-form", name: "sugars", label: "Sugars Weight (lb.)" }],
+    [{ id: "raw-weight-form", name: "rawFerm", label: "Raw Fermentables Weight (lb.)" }, { id: "accidulated-weight-form", name: "accidulatedMalt", label: "Accidulated Malt Weight (lb.)" }],
+    [{ id: "fruit-weight-form", name: "fruitFerm", label: "Fruit Fermentables Weight (lb.)" }, { id: "gluten-free-weight-form", name: "glutenFreeMalt", label: "Gluten-free Malt Weight (lb.)" }],
+    [{ id: "pellet-weight-form", name: "pelletHops", label: "Pellet Hops Weight (lb.)" }, { id: "whole-weight-form", name: "wholeHops", label: "Whole Hops Weight (lb.)" }],
+    [{ id: "plug-weight-form", name: "plugHops", label: "Plug Hops Weight (lb.)" }, { id: "attenuation-form", name: "attenRate", label: "Attenuation Rate" }],
+    [{ id: "boil-form", name: "boil", label: "Boil Time (Minutes)" }, { id: "none", name: "", label: "" }]]
+
+const featSelectForms = [[{ id: "flocculation", name: "flocculation", label: "Flocculation Rate", options: [{ value: "low", display: "Low" }, { value: "medium", display: "Medium" }, { value: "high", display: "High" }] }, { id: "method-form", name: "method", label: "Method", options: [{ value: "all_grain", display: "All Grain" }, { value: "extract", display: "Extract" }, { value: "biab", display: "BIAB" }, { value: "partial_mash", display: "Partial Mash" }] }],
+[{ id: "spice-form", name: "containSpice", label: "Contains Spices", options: "default" }, { id: "water-form", name: "containWater", label: "Contains Water Agents", options: "default" }],
+[{ id: "other-ingredients-form", name: "containOther", label: "Contains Other (non-standard) Ingredients", options: "default" }, { id: "fining-form", name: "containFinings", label: "Contains Added Finings", options: "default" }],
+[{ id: "added-flavors-form", name: "containFlavors", label: "Contains Added Flavors", options: "default" }, { id: "added-herbs-form", name: "containHerbs", label: "Contains Added Herbs", options: "default" }],
+[{ id: "yeast-form", name: "yeastType", label: "Yeast Type", options: [{ value: "liquid", display: "Liquid" }, { value: "dry", display: "Dry" }] }, { id: "none", name: "", label: "", options: "default" }]]
 
 export class InteractiveModel extends Component {
 
     componentWillMount() {
-        featTextForms.forEach((group) => { 
-            group.forEach((item) => { 
-                this.setState({ [item.name]: "" });
+        featTextForms.forEach((group) => {
+            group.forEach((item) => {
+                if (item.id !== "none") this.setState({ [item.name]: "" });
             })
         })
 
-        featSelectForms.forEach((group) => { 
-            group.forEach((item) => { 
+        featSelectForms.forEach((group) => {
+            group.forEach((item) => {
                 if (item.options === "default") {
                     this.setState({ [item.name]: "yes" });
-                } else {
+                } else if (item.id !== "none") {
                     this.setState({ [item.name]: item.options[0].value });
                 }
             })
@@ -47,41 +48,41 @@ export class InteractiveModel extends Component {
     handleButton = () => {
 
         let test = {
-                "abv": 5.92,
-                "boil_time": 60,
-                "diff_g": 0.045,
-                "efficiency": 61.0,
-                "ferm_total_weight": 13.5,
-                "ferm_type_acidulated_malt": 0,
-                "ferm_type_base_malt": 11.0,
-                "ferm_type_crystal_malt": 1.0,
-                "ferm_type_extract": 0,
-                "ferm_type_fruit": 0,
-                "ferm_type_gluten_free_malt": 0,
-                "ferm_type_other": 0.75,
-                "ferm_type_raw": 0,
-                "ferm_type_roasted_malt": 0,
-                "ferm_type_sugar": 0,
-                "hops_type_leaf_whole": 0,
-                "hops_type_pellet": 0.25,
-                "hops_type_plug": 0,
-                "ibu": 38.66,
-                "method_all_grain": 1,
-                "method_biab": 0,
-                "method_extract": 0,
-                "method_partial_mash": 0,
-                "other_type_fining": 0,
-                "other_type_flavor": 0,
-                "other_type_herb": 0,
-                "other_type_other": 1,
-                "other_type_spice": 0,
-                "other_type_water_agt": 0,
-                "yeast_attenuation": 77.0,
-                "yeast_flocculation_high": 1,
-                "yeast_flocculation_low": 0,
-                "yeast_flocculation_medium": 0,
-                "yeast_form_dry": 1,
-                "yeast_form_liquid": 0
+            "abv": 5.92,
+            "boil_time": 60,
+            "diff_g": 0.045,
+            "efficiency": 61.0,
+            "ferm_total_weight": 13.5,
+            "ferm_type_acidulated_malt": 0,
+            "ferm_type_base_malt": 11.0,
+            "ferm_type_crystal_malt": 1.0,
+            "ferm_type_extract": 0,
+            "ferm_type_fruit": 0,
+            "ferm_type_gluten_free_malt": 0,
+            "ferm_type_other": 0.75,
+            "ferm_type_raw": 0,
+            "ferm_type_roasted_malt": 0,
+            "ferm_type_sugar": 0,
+            "hops_type_leaf_whole": 0,
+            "hops_type_pellet": 0.25,
+            "hops_type_plug": 0,
+            "ibu": 38.66,
+            "method_all_grain": 1,
+            "method_biab": 0,
+            "method_extract": 0,
+            "method_partial_mash": 0,
+            "other_type_fining": 0,
+            "other_type_flavor": 0,
+            "other_type_herb": 0,
+            "other_type_other": 1,
+            "other_type_spice": 0,
+            "other_type_water_agt": 0,
+            "yeast_attenuation": 77.0,
+            "yeast_flocculation_high": 1,
+            "yeast_flocculation_low": 0,
+            "yeast_flocculation_medium": 0,
+            "yeast_form_dry": 1,
+            "yeast_form_liquid": 0
         }
 
         let beerJSON = {};
@@ -126,22 +127,71 @@ export class InteractiveModel extends Component {
         fetch("https://api.bdinh.me/v1/beer", {
             method: "POST",
             headers: new Headers({
-                'Content-Type':'application/json',
+                'Content-Type': 'application/json',
             }),
             body: JSON.stringify(test)
         })
-        .then(response => {
-            if (!response.ok) throw response;
-            return response.json()
-        })
-        .then(result => {
-            this.setState({"predictedScore": result.predicted_popularity})
-            console.log(result)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+            .then(response => {
+                if (!response.ok) throw response;
+                return response.json()
+            })
+            .then(result => {
+                this.setState({ "predictedScore": result.predicted_popularity })
+                console.log(result)
+            })
+            .catch(error => {
+                console.log(error)
+            })
     };
+
+    getRandomArbitrary = (min, max) => {
+        return Math.random() * (max - min) + min;
+    }
+
+    getRandomIntInclusive = (max) => {
+        return Math.floor(Math.random() * (Math.floor(max) - 1));
+    }
+
+    // generates random values around the mean per feature
+    generateRandomValues = () => {
+        this.setState({
+            abv: "" + this.getRandomArbitrary(1, 20),
+            ibu: "" + this.getRandomArbitrary(10, 80),
+            og: "" + this.getRandomArbitrary(1.05, 1.08),
+            fg: "" + this.getRandomArbitrary(1.009, 1.02),
+            gravDif: "" + this.getRandomArbitrary(.01, 2),
+            boil: "" + this.getRandomArbitrary(30, 90),
+            efficiency: "" + this.getRandomArbitrary(60, 70),
+            totalFerm: "" + this.getRandomArbitrary(5, 20),
+            baseMalt: "" + this.getRandomArbitrary(4, 20),
+            crystalMalt: "0",
+            roastedMalt: "0",
+            otherFerm: "0",
+            extract: "0",
+            sugars: "0",
+            rawFerm: "0",
+            accidulatedMalt: "0",
+            fruitFerm: "0",
+            glutenFreeMalt: "0",
+            pelletHops: "" + this.getRandomArbitrary(3, 20),
+            wholeHops: "0",
+            plugHops: "0",
+            attenRate: "" + this.getRandomArbitrary(72, 83),
+        });
+
+        // featSelectForms.forEach((group) => {
+        //     group.forEach((item) => {
+        //         if (item.options === "default") {
+        //             let array = ["yes", "no"];
+        //             let option = array[this.getRandomIntInclusive(1)];
+        //             this.setState({ [item.name]: option });
+        //         } else if (item.id !== "none") {
+        //             let option = item.options[this.getRandomIntInclusive(item.options.length - 1)].value;
+        //             this.setState({ [item.name]: option });
+        //         }
+        //     })
+        // })
+    }
 
     render() {
 
@@ -173,11 +223,11 @@ export class InteractiveModel extends Component {
                     <Grid>
                         <Row>
                             <Col xs={12} md={6}>
-                                <h1>Filler:</h1>
+                                <h1>Predictions</h1>
                             </Col>
                             <Col xs={12} md={6}>
                                 <p className="jumbotron-para">
-                                    {this.state.predictedScore ? "Popularity rating of " + this.state.predictedScore + " out of 5!" : "Recipe Not Filled"}
+                                    Create a recipe for yourself - we'll give you a score. If you need help getting started we can initialize some key values for you.
                                 </p>
                             </Col>
                         </Row>
@@ -224,11 +274,31 @@ export class InteractiveModel extends Component {
                     }
                 </Form>
 
-                <ButtonToolbar>
-                    <Button bsStyle="primary" bsSize="large" onClick={this.handleButton} >
-                        Run Thing
-                    </Button>
+                <ButtonToolbar className="forms-buttons">
+                    <Button bsStyle="warning" bsSize="large" className="run-button" onClick={this.generateRandomValues} > Get Started </Button>
+                    <Button bsStyle="primary" bsSize="large" className="run-button" onClick={this.handleButton} > Run </Button>
                 </ButtonToolbar>
+
+                {(this.state.predictedScore) &&
+                    <Jumbotron>
+                        <Grid>
+                            <Row>
+                                <Col xs={12} md={6}>
+                                    <h1> {(this.state.predictedScore > 0) && <Glyphicon glyph="star" />}
+                                        {(this.state.predictedScore > 1) && <Glyphicon glyph="star" />}
+                                        {(this.state.predictedScore > 2) && <Glyphicon glyph="star" />}
+                                        {(this.state.predictedScore > 3) && <Glyphicon glyph="star" />}
+                                        {(this.state.predictedScore > 4) && <Glyphicon glyph="star" />}</h1>
+                                </Col>
+                                <Col xs={12} md={6}>
+                                    <p className="jumbotron-para rating-jumbo">
+                                        {"Popularity rating of " + this.state.predictedScore + " out of 5!"}
+                                    </p>
+                                </Col>
+                            </Row>
+                        </Grid>
+                    </Jumbotron>
+                }
             </div>
         );
     }
