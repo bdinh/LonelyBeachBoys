@@ -7,6 +7,7 @@ import { Homepage } from './pages/Homepage/Homepage';
 import { Exploration } from './pages/Exploration/Exploration';
 import { InteractiveModel } from './pages/InteractiveModel/InteractiveModel';
 import { Results } from './pages/Results/Results';
+import {DataPreparation} from "./pages/DataPreparation/DataPreparation";
 
 class App extends Component {
   render() {
@@ -24,9 +25,10 @@ class App extends Component {
               <Navbar.Collapse>
                 <Nav pullRight>
                   <NavItem eventKey={1} componentClass='span'><Link className="nav-links" to="/">Homepage</Link></NavItem>
-                  <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Exploration</Link></NavItem>
-                  <NavItem eventKey={3} componentClass='span'><Link className="nav-links" to="/interact">Interactive Model</Link></NavItem>
-                  <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/results">Results</Link></NavItem>
+                  <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Data Preparation</Link></NavItem>
+                  <NavItem eventKey={3} componentClass='span'><Link className="nav-links" to="/explore">Exploration</Link></NavItem>
+                  <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/interact">Interactive Model</Link></NavItem>
+                  <NavItem eventKey={5} componentClass='span'><Link className="nav-links" to="/results">Results</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>
@@ -35,6 +37,7 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path="/" component={Homepage} />
+              <Route path="/explore" component={DataPreparation} />
               <Route path="/explore" component={Exploration} />
               <Route path="/interact" component={InteractiveModel} />
               <Route path="/results" component={Results} />

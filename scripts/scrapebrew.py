@@ -15,7 +15,7 @@ base_url = "https://www.brewersfriend.com"
 def scrape_brewer_friends(csv_name, page_max):
     """
         scrape_brewer_friends maintains the control flow structure that allows for the scraping of 
-        4954 pages of beer recipes. This function does not accept an arguments and does not return 
+        5000+ pages of beer recipes. This function does not accept an arguments and does not return 
         anything.
         Args:
             csv_name (string): Represents a string used to name the csv file being written
