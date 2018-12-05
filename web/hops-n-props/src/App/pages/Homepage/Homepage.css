@@ -1,5 +1,6 @@
 .jumbotron-para {
-    margin-top: 2em;
+    margin-top: 0;
+    font-size: xx-large!important;
 }
 
 .div-panel {
@@ -17,6 +18,11 @@
     text-align: center;
     color: #f5f5f5;
     font-size: 3.5em;
+}
+
+.normal-para {
+    font-size: larger;
+    font-weight: 200;
 }
 
 .rounded-circle {

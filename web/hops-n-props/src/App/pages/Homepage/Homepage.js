@@ -3,7 +3,7 @@ import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
 import './Homepage.css';
 import { TeamCard } from './components/TeamCard';
 
-const team = [{name: "Sam Otto", img:"./img/me_1.jpg", alt:"Sam standing by tree"}, {name: "Namam Mehra", img:"./img/namam.jpeg", alt:"Picture of team member Namam"}, {name: "Josiah Chapman", img:"./img/josiah.jpeg", alt:"Picture of team member Josiah"}, {name: "Bao Dinh", img:"./img/bao.JPG", alt:"Picture of team member Bao"}];
+const team = [{ name: "Sam Otto", img: "./img/me_1.jpg", alt: "Sam standing by tree" }, { name: "Namam Mehra", img: "./img/namam.jpeg", alt: "Picture of team member Namam" }, { name: "Josiah Chapman", img: "./img/josiah.jpeg", alt: "Picture of team member Josiah" }, { name: "Bao Dinh", img: "./img/bao.JPG", alt: "Picture of team member Bao" }];
 
 export class Homepage extends Component {
 
@@ -29,7 +29,7 @@ export class Homepage extends Component {
                     <Row>
                         <Col xs={12}>
                             <h2>Background</h2>
-                            <p>Homebrewing is a hobby that has been gaining traction recently - the activity has a long
+                            <p className="normal-para">Homebrewing is a hobby that has been gaining traction recently - the activity has a long
                                 and storied history, stretching back thousands of years, and is now embraced by people
                                 in the lab and garage alike. There are many different approaches, starting points, and
                                 strategies, but it all boils down to taking an unfermented grain derivative and turning
@@ -39,7 +39,7 @@ export class Homepage extends Component {
                                 to the dive bar, and the pursuit of brewing perfection pervades research papers as much
                                 as online forums.
                             </p>
-                            <p>Chemists seem especially drawn to brewing, since, unlike most industrial fermentation
+                            <p className="normal-para">Chemists seem especially drawn to brewing, since, unlike most industrial fermentation
                                 processes designed to produce one thing in quantity which is then extracted and purified,
                                 beer is itself both the process and the final product - all the byproducts are a part of
                                 the beer (Gee & Ramirez, 1994). These chemists came up with a series of mathematical
@@ -56,7 +56,7 @@ export class Homepage extends Component {
                                 isobutyl alcohol and isoamyl alcohol.” Many such balancing acts exist within the brewing
                                 process, and the difficulty they impart is exacerbated by the relatively few knobs and
                                 dials a brewer has at their disposal.</p>
-                            <p>
+                            <p className="normal-para">
                                 A brewer bears more resemblance to a zookeeper than a cook, as their most important job
                                 is to keep the yeast happy, healthy, and entertained with the proper substances. Since
                                 the yeast is doing all the real work - eating, excreting, and eventually lying dormant
@@ -74,7 +74,7 @@ export class Homepage extends Component {
                                 takes the form of “this tastes good,” or “this tastes like the inside of a shoe,” which
                                 is not especially useful except when taken in aggregate.
                             </p>
-                            <p>
+                            <p className="normal-para">
                                 As mentioned previously, a brewer has at their fingertips a number of knobs and dials,
                                 each of which has a multitude inscrutable, overlapping effects on the final product.
                                 These include standardized parameters and measures of the brewing process (such as boil
@@ -93,11 +93,11 @@ export class Homepage extends Component {
                         </Col>
                         <Col xs={12}>
                             <h2>Our Work</h2>
-                            <p>Our work is documented within this <a href={"https://github.com/bdinh/LonelyBeachBoys"}>Github Repository</a>. Feel free to provide any
+                            <p className="normal-para">Our work is documented within this <a href={"https://github.com/bdinh/LonelyBeachBoys"}>Github Repository</a>. Feel free to provide any
                                 feedback or suggestions.</p>
                         </Col>
                         <Col xs={12}>
-                            <h2>Sources</h2>
+                            <h3>Sources</h3>
                             <p>Marsili, R. T., Laskonis, L. C., and Kenaan, C. (2007) Evaluation of PDMS-Based
                                 Extraction Techniques and GC-TOFMS for the Analysis of Off-Flavor Chemicals in Beer,
                                 Journal of the American Society of Brewing Chemists, 65:3, 129-137, DOI: 10.1094/ASBCJ-2007-0617-01
@@ -123,7 +123,7 @@ export class Homepage extends Component {
                             </Col>
                         </Row>
                         <Row>
-                            { team.map((member, index) => { return <TeamCard key={"member" + index} member={member} /> }) }
+                            {team.map((member, index) => { return <TeamCard key={"member" + index} member={member} /> })}
                         </Row>
                     </Grid>
                 </div>

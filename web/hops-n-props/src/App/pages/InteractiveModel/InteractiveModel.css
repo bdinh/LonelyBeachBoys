@@ -15,3 +15,12 @@
 .forms-buttons {
     display: flex;
 }
+
+.prediction-col {
+    font-size: larger;
+    font-weight: 200;
+}
+
+.rating-jumbo {
+    margin-top: 1em;
+}

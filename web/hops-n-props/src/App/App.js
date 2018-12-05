@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, Grid, Row, Col, Glyphicon } from 'react-bootstrap';
 
 import { Homepage } from './pages/Homepage/Homepage';
-import { Exploration } from './pages/Exploration/Exploration';
 import { InteractiveModel } from './pages/InteractiveModel/InteractiveModel';
 import { Results } from './pages/Results/Results';
-import {DataPreparation} from "./pages/DataPreparation/DataPreparation";
+import { DataPreparation } from "./pages/DataPreparation/DataPreparation";
 
 class App extends Component {
   render() {
@@ -24,9 +23,9 @@ class App extends Component {
               </Navbar.Header>
               <Navbar.Collapse>
                 <Nav pullRight>
-                  <NavItem eventKey={1} componentClass='span'><Link className="nav-links" to="/">Homepage</Link></NavItem>
+                  <NavItem eventKey={1} componentClass='span'><Link className="nav-links" to="/">Home</Link></NavItem>
                   <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Data</Link></NavItem>
-                  <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/interact">Interactive Model</Link></NavItem>
+                  <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/interact">Interact</Link></NavItem>
                   <NavItem eventKey={5} componentClass='span'><Link className="nav-links" to="/results">Results</Link></NavItem>
                 </Nav>
               </Navbar.Collapse>
@@ -44,7 +43,25 @@ class App extends Component {
 
           <footer className="footer">
             <div className="manual-container">
-              <span className="footer-text">This is a footer</span>
+              <span className="footer-text">
+                <Grid>
+                  <Row>
+                    <Col xs={6}>
+                      <p className="normal-para">Project by the Lonely Beach Boys</p>
+                      <Glyphicon glyph="star" /><Glyphicon glyph="star" /><Glyphicon glyph="star" /><Glyphicon glyph="star" /><Glyphicon glyph="star" />
+                    </Col>
+                    <Col xs={6}>
+                      <ul id="footer-ul">
+                        <li className="normal-para"><Link className="nav-links" to="/">Home</Link></li>
+                        <li className="normal-para"><Link className="nav-links" to="/explore">Data</Link></li>
+                        <li className="normal-para"><Link className="nav-links" to="/interact">Interact</Link></li>
+                        <li className="normal-para"><Link className="nav-links" to="/results">Results</Link></li>
+                      </ul>
+                      <p className="normal-para" id="footer-links">Quick Links</p>
+                    </Col>
+                  </Row>
+                </Grid>
+              </span>
             </div>
           </footer>
         </div>
