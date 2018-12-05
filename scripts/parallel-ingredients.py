@@ -15,19 +15,15 @@ fermentables = pd.read_csv("./data/raw/fermentables.csv", keep_default_na=False)
 fermentables_dict = dict(zip(fermentables["name"], fermentables["type"]))
 yeast_dict = {}
 fermentables_countries = fermentables.country.unique()
-    
 
 beer_recipes = pd.read_csv("./data/raw/all_recipes.csv", keep_default_na=False)
-titles = beer_recipes.title_url.loc[95001:]
+titles = beer_recipes.title_url.loc
 
 def crawl(url):
     print(url)
     result = {}
-    page = r.get(url, headers={'User-Agent':'Mozilla/5.0'})
+    page = r.get(url, headers={'User-Agent': 'Mozilla/5.0'})
     soup = bs(page.content, "html.parser")
-    
-#     page = r.get(title_url, headers={'User-Agent':'Mozilla/5.0'})
-#     soup = bs(page.content, "html.parser")
 
     result["mash_ph"] = "n/a"
     mash_ph = soup.find("div", {"class": "phMin"})
@@ -227,14 +223,12 @@ def scrape_yeast_url(yeast_url):
     return yeast_result
 
 
-
-
 with Pool(12) as p:
     records = p.map(crawl, titles)
 
 p.terminate()
 p.join()
-name = "brewer_ingredients_all.csv"
+name = "new_brewer_ingredients_all.csv"
 with open("data/raw/" + name, mode='a', encoding='utf-8') as csv_file:
     field_names = ["title_url", "mash_ph", "rating_value", "rating_count", "view_count", "ferm_total_weight",
                    "ferm_type_base_malt", "ferm_type_crystal_malt", "ferm_type_roasted_malt", "ferm_type_other",
@@ -247,6 +241,6 @@ with open("data/raw/" + name, mode='a', encoding='utf-8') as csv_file:
                    "water_ca+2",
                    "water_mg+2", "water_na+", "water_cl-", "water_so4-2", "water_hco3-"]
     writer = csv.DictWriter(csv_file, fieldnames=field_names)
-    # writer.writeheader()
+    writer.writeheader()
     for row in records:
         writer.writerow(row)

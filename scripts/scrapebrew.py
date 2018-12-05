@@ -478,11 +478,6 @@ def extract_general_recipe_detail(soup, title_url):
     """
     
     result = {}
-#     page = r.get(url, headers={'User-Agent':'Mozilla/5.0'})
-#     soup = bs(page.content, "html.parser")
-    
-#     page = r.get(title_url, headers={'User-Agent':'Mozilla/5.0'})
-#     soup = bs(page.content, "html.parser")
     mash_ph = soup.find("div", {"class": "phMin"}).text.strip()
     
     result["title_url"] = title_url
@@ -674,34 +669,3 @@ def scrape_yeast_url(yeast_url):
             yeast_result["name"] = yeast_name
 
     return yeast_result
-
-# from multiprocessing import Pool
-# from multiprocessing import cpu_count
-
-# beer_recipes = pd.read_csv("../data/raw/all_recipes.csv", keep_default_na=False)
-# titles = beer_recipes.title_url.head(1000)
-# with Pool(10) as p:
-#     general, reviews = p.map(scrape_recipes_details, titles)
-#     p.terminate()
-#     p.join()
-
-def crawl(url):
-    page = r.get(url, headers={'User-Agent':'Mozilla/5.0'})
-    soup = bs(page.content, "html.parser")
-    
-    mash_ph = soup.find("div", {"class": "phMin"}).text.strip()
-    return mash_ph
-
-# # print(len(general))
-# beer_recipes = pd.read_csv("../data/raw/all_recipes.csv", keep_default_na=False)
-# titles = beer_recipes.head(10)
-
-# with Pool(cpu_count() * 2) as p:
-#     general = p.map(extract_general_recipe_detail, titles)
-    
-# print(general)
-# print(len(general))
-# write_detail_recipe_to_csv(general, "brewer_ingredients_all.csv")
-# print("Completed writing detailed beer recipes to CSV. Data can be found: data/raw/" + csv_detail)
-# # write_recipe_reviews_to_csv(reviews, "brewer_reviews_all.csv")
-# # print("Completed writing beer recipes reviews to CSV. Data can be found: data/raw/" + csv_review)

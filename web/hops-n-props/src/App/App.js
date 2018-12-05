@@ -12,7 +12,7 @@ import {DataPreparation} from "./pages/DataPreparation/DataPreparation";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router >
         <div>
           <header>
             <Navbar inverse collapseOnSelect>

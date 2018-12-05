@@ -17,24 +17,13 @@ yeast_dict = {}
 fermentables_countries = fermentables.country.unique()
 
 beer_recipes = pd.read_csv("./data/raw/all_recipes.csv", keep_default_na=False)
-titles = beer_recipes.title_url.loc[0:1]
+titles = beer_recipes.title_url.loc
 
 def crawl(url):
     print(url)
-    # headers = {
-    #     'User-Agent':'My User Agent 1.0',
-    #     'From': 'bdinh.me'  # This is another valid field
-    # }
-    headers = {
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
-    }
-    proxies = {
-        "http": 'http://187.17.48.182:56321',
-        "https": 'http://187.17.48.182:56321'
-    }
-    page = r.get(url, headers=headers)
+
+    page = r.get(url, headers={'User-Agent': 'Mozilla/5.0'})
     soup = bs(page.content, "html.parser")
-    # print(soup)
     brewpart_divs  = soup.findAll("div", {"class": "brewpart"})
     brewpart_review_div = brewpart_divs[len(brewpart_divs) - 1]
     brewpart_review_tables = brewpart_review_div.find("table").find("td").findAll("table")
@@ -87,7 +76,7 @@ def crawl(url):
 with Pool(12) as p:
     records = p.map(crawl, titles)
 
-name = "brewer_review_all.csv"
+name = "new_brewer_review_all.csv"
 
 with open("data/raw/" + name, mode='a', encoding='utf-8') as csv_file:
     field_names = ["title_url", "reviewer_url", "reviewer_name", "review_description",
