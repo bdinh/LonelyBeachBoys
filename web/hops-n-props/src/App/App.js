@@ -25,8 +25,7 @@ class App extends Component {
               <Navbar.Collapse>
                 <Nav pullRight>
                   <NavItem eventKey={1} componentClass='span'><Link className="nav-links" to="/">Homepage</Link></NavItem>
-                  <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Data Preparation</Link></NavItem>
-                  <NavItem eventKey={3} componentClass='span'><Link className="nav-links" to="/explore">Exploration</Link></NavItem>
+                  <NavItem eventKey={2} componentClass='span'><Link className="nav-links" to="/explore">Data</Link></NavItem>
                   <NavItem eventKey={4} componentClass='span'><Link className="nav-links" to="/interact">Interactive Model</Link></NavItem>
                   <NavItem eventKey={5} componentClass='span'><Link className="nav-links" to="/results">Results</Link></NavItem>
                 </Nav>
@@ -38,7 +37,6 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Homepage} />
               <Route path="/explore" component={DataPreparation} />
-              <Route path="/explore" component={Exploration} />
               <Route path="/interact" component={InteractiveModel} />
               <Route path="/results" component={Results} />
             </Switch>

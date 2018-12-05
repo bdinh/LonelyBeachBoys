@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {  Grid, Row, Col } from 'react-bootstrap';
+import {Grid, Row, Col, Jumbotron} from 'react-bootstrap';
 import './DataPreparation.css';
 
 export class DataPreparation extends Component {
@@ -7,6 +7,20 @@ export class DataPreparation extends Component {
     render() {
         return(
             <div>
+                <Jumbotron>
+                    <Grid>
+                        <Row>
+                            <Col xs={12} md={6}>
+                                <h1>Collecting, Preparation & Exploration</h1>
+                            </Col>
+                            <Col xs={12} md={6}>
+                                <p className="jumbotron-para">
+                                    Here we seek to inform you about how we collected, prepared and explored our data. [Add more? Sounds lame]
+                                </p>
+                            </Col>
+                        </Row>
+                    </Grid>
+                </Jumbotron>
                 <Grid>
                     <Row className="show-grid">
                         <Col xs={12}>
