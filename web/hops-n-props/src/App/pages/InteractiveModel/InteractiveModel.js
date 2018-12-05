@@ -1,44 +1,61 @@
 import React, { Component } from 'react';
 import './InteractiveModel.css';
-import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, HelpBlock, FormControl, Row, Col, Jumbotron, Grid } from 'react-bootstrap';
+import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid } from 'react-bootstrap';
+
+const featTextForms = [[{ id: "abv-form", name: "abv", label: "Alcohol by Volume (ABV)" }, { id: "ibu-form", name: "ibu", label: "International Bittering Units (IBU)" }], [{ id: "grav-dif-form", name: "gravDif", label: "Gravity Difference" }, { id: "boil-form", name: "boil", label: "Boil Time" }], [{ id: "efficiency-form", name: "efficiency", label: "Efficiency" }, { id: "ferm-weight-form", name: "totalFerm", label: "Total Fermentable Weight (lb.)" }], [{ id: "malt-form", name: "baseMalt", label: "Base Malt Weight (lb.)" }, { id: "crystal-weight-form", name: "crystalMalt", label: "Crystal Malt Weight (lb.)" }], [{ id: "roasted-weight-form", name: "roastedMalt", label: "Roasted Malt Weight (lb.)" }, { id: "other-weight-form", name: "otherFerm", label: "Other Fermentables Weight (lb.)" }], [{ id: "extract-weight-form", name: "extract", label: "Extract Weight (lb.)" }, { id: "sugar-weight-form", name: "sugars", label: "Sugars Weight (lb.)" }], [{ id: "raw-weight-form", name: "rawFerm", label: "Raw Fermentables Weight (lb.)" }, { id: "accidulated-weight-form", name: "accidulatedMalt", label: "Accidulated Malt Weight (lb.)" }], [{ id: "fruit-weight-form", name: "fruitFerm", label: "Fruit Fermentables Weight (lb.)" }, { id: "gluten-free-weight-form", name: "glutenFreeMalt", label: "Gluten-free Malt Weight (lb.)" }], [{ id: "pellet-weight-form", name: "pelletHops", label: "Pellet Hops Weight (lb.)" }, { id: "whole-weight-form", name: "wholeHops", label: "Whole Hops Weight (lb.)" }], [{ id: "plug-weight-form", name: "plugHops", label: "Plug Hops Weight (lb.)" }, { id: "attenuation-form", name: "attenRate", label: "Attenuation Rate" }], [{ id: "flocculation-form", name: "floccRate", label: "Flocculation Rate" }, { id: "none", name: "", label: "" }]]
+const featSelectForms = [[{ id: "spice-form", name: "containSpice", label: "Contains Spices", options: "default" }, { id: "water-form", name: "containWater", label: "Contains Water Agents", options: "default" }], [{ id: "other-ingredients-form", name: "containOther", label: "Contains Other (non-standard) Ingredients", options: "default" }, { id: "fining-form", name: "containFinings", label: "Contains Added Finings", options: "default" }], [{ id: "added-flavors-form", name: "containFlavors", label: "Contains Added Flavors", options: "default" }, { id: "added-herbs-form", name: "containHerbs", label: "Contains Added Herbs", options: "default" }], [{ id: "yeast-form", name: "yeastType", label: "Yeast Type", options: [{ value: "liquid", display: "Liquid" }, { value: "dry", display: "Dry" }] }, { id: "method-form", name: "method", label: "Method", options: [{ value: "need", display: "Need" }, { value: "to", display: "To" }, { value: "find", display: "Find" }, { value: "values", display: "Values" }] }]]
 
 export class InteractiveModel extends Component {
 
-    constructor(props) {
-        super(props);
+    componentWillMount() {
+        featTextForms.forEach((group) => { 
+            group.forEach((item) => { 
+                this.setState({ [item.name]: "" });
+            })
+        })
 
-        this.state = {
-            spice: "",
-            abv: ""
-        };
+        featSelectForms.forEach((group) => { 
+            group.forEach((item) => { 
+                if (item.options === "default") {
+                    this.setState({ [item.name]: "yes" });
+                } else {
+                    this.setState({ [item.name]: item.options[0].value });
+                }
+            })
+        })
     }
 
-    // handleChange = (event) => {
-    //     let field = event.target.name;
-    //     let value = event.target.value;
-    //     newPost[field] = value;
-    // }
-
-    handleChange = e => {
-        this.setState({ [e.target.id]: e.target.value });
+    handleChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value });
     };
 
     handleButton = () => {
-        console.log(this.state.spice);
-        console.log(this.state.abv);
+        console.log(this.state);
     };
 
     render() {
 
-        function FieldGroup({ id, label, help, ...props }) {
+        let textGroup = (entry) => {
             return (
-                <FormGroup controlId={id}>
-                    <ControlLabel>{label}</ControlLabel>
-                    <FormControl {...props} />
-                    {help && <HelpBlock>{help}</HelpBlock>}
+                <FormGroup controlId={entry.id}>
+                    <ControlLabel>{entry.label}</ControlLabel>
+                    <FormControl type='text' name={entry.name} placeholder='Enter text' defaultValue={this.state[entry.name]} onChange={this.handleChange} />
                 </FormGroup>
-            );
-        }
+            )
+        };
+
+        let selectGroup = (entry) => {
+            return (
+                <FormGroup controlId={entry.id}>
+                    <ControlLabel>{entry.label}</ControlLabel>
+                    <FormControl componentClass="select" name={entry.name} onChange={this.handleChange}>
+                        {(entry.options !== "default") && entry.options.map((option) => { return (<option key={option.value} value={option.value}>{option.display}</option>) })}
+                        {(entry.options === "default") && <option value="yes">Yes</option>}
+                        {(entry.options === "default") && <option value="no">No</option>}
+                    </FormControl>
+                </FormGroup>
+            )
+        };
 
         return (
             <div>
@@ -58,194 +75,50 @@ export class InteractiveModel extends Component {
                 </Jumbotron>
 
                 <Form horizontal>
-                    <Row>
-                        <Col xs={6}>
-                            <FormGroup controlId="abv-form">
-                                <ControlLabel>Alcohol by Volume (ABV)</ControlLabel>
-                                <FormControl componentClass="text" placeholder="Enter text" value={this.state.abv} onChange={this.handleChange} />
-                            </FormGroup>
+                    {
+                        featTextForms.map((group, index) => {
+                            return (
+                                <Row key={"text-row-" + index}>
+                                    {
+                                        group.map((entry) => {
+                                            return (
+                                                <Col xs={6} key={entry.name}>
+                                                    {(entry.id !== "none") && textGroup(entry)}
+                                                </Col>
+                                            )
+                                        })
+                                    }
+                                </Row>
 
-                            {/* <FieldGroup id="abv-form" type="text" label="Alcohol by Volume (ABV)" placeholder="Enter text" /> */}
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="ibu-form" type="text" label="International Bittering Units (IBU)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
+                            )
+                        })
+                    }
 
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="grav-dif-form" type="text" label="Gravity Difference" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="method-form" type="text" label="Method" placeholder="Enter text" />
-                        </Col>
-                    </Row>
+                    {
+                        featSelectForms.map((group, index) => {
+                            return (
+                                <Row key={"select-row-" + index}>
+                                    {
+                                        group.map((entry) => {
+                                            return (
+                                                <Col xs={6} key={entry.name}>
+                                                    {(entry.id !== "none") && selectGroup(entry)}
+                                                </Col>
+                                            )
+                                        })
+                                    }
+                                </Row>
 
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="boil-form" type="text" label="Boil Time" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="efficiency-form" type="text" label="Efficiency" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="ferm-weight-form" type="text" label="Total Fermentable Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="malt-form" type="text" label="Base Malt Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="crystal-weight-form" type="text" label="Crystal Malt Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="roasted-weight-form" type="text" label="Roasted Malt Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="other-weight-form" type="text" label="Other Fermentables Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="extract-weight-form" type="text" label="Extract Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="sugar-weight-form" type="text" label="Sugars Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="raw-weight-form" type="text" label="Raw Fermentables Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="accidulated-weight-form" type="text" label="Accidulated Malt Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="fruit-weight-form" type="text" label="Fruit Fermentables Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="gluten-free-weight-form" type="text" label="Gluten-free Malt Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="pellet-weight-form" type="text" label="Pellet Hops Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="whole-weight-form" type="text" label="Whole Hops Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="plug-weight-form" type="text" label="Plug Hops Weight (lb.)" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FormGroup controlId="spice-form">
-                                <ControlLabel>Contains Spices</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select" name="spice" onChange={this.handleChange}>
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                        <Col xs={6}>
-                            <FormGroup controlId="water-form">
-                                <ControlLabel>Contains Water Agents</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FormGroup controlId="other-ingredients-form">
-                                <ControlLabel>Contains Other (non-standard) Ingredients</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                        <Col xs={6}>
-                            <FormGroup controlId="fining-form">
-                                <ControlLabel>Contains Added Finings</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FormGroup controlId="added-flavors-form">
-                                <ControlLabel>Contains Added Flavors</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                        <Col xs={6}>
-                            <FormGroup controlId="added-herbs-form">
-                                <ControlLabel>Contains Added Herbs</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FormGroup controlId="yeast-form">
-                                <ControlLabel>Yeast Type</ControlLabel>
-                                <FormControl componentClass="select" placeholder="select">
-                                    <option value="liquid">Liquid</option>
-                                    <option value="dry">Dry</option>
-                                </FormControl>
-                            </FormGroup>
-                        </Col>
-                        <Col xs={6}>
-                            <FieldGroup id="attenuation-form" type="text" label="Attenuation Rate" placeholder="Enter text" />
-                        </Col>
-                    </Row>
-
-                    <Row>
-                        <Col xs={6}>
-                            <FieldGroup id="flocculation-form" type="text" label="Flocculation Rate" placeholder="Enter text" />
-                        </Col>
-                        <Col xs={6}>
-                            <div></div>
-                        </Col>
-                    </Row>
-
+                            )
+                        })
+                    }
                 </Form>
+
                 <ButtonToolbar>
                     <Button bsStyle="primary" bsSize="large" onClick={this.handleButton} >
                         Run Thing
                     </Button>
-                </ButtonToolbar>;
+                </ButtonToolbar>
             </div>
         );
     }
