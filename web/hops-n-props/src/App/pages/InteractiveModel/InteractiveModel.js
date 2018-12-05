@@ -85,6 +85,45 @@ export class InteractiveModel extends Component {
             "yeast_form_liquid": 0
         }
 
+        // 20571	4.57	14.66	0.034	60	75	1.94	1	0	0.9375	0	0	0	0	0	0	0	0.09375	0	0	0	0	0	0	0	0	66.5	0	1	0	0	0	1	1	0	0
+        let star_1 = {
+            "abv": 4.57,
+            "ibu": 14.66,
+            "diff_g": 0.034,
+            "boil_time": 60,
+            "efficiency": 75,
+            "ferm_total_weight": 1.94,
+            "ferm_type_base_malt": 1,
+            "ferm_type_crystal_malt": 0,
+            "ferm_type_roasted_malt": 0.9375,
+            "ferm_type_other": 0,
+            "ferm_type_extract": 0,
+            "ferm_type_sugar": 0,
+            "ferm_type_raw": 0,
+            "ferm_type_acidulated_malt": 1,
+            "ferm_type_fruit": 0,
+            "ferm_type_gluten_free_malt": 0,
+            "hops_type_pellet": 0.09375,
+            "hops_type_leaf_whole": 0,
+            "hops_type_plug": 0,
+            "other_type_spice": 0,
+            "other_type_water_agt": 0,
+            "other_type_other": 0,
+            "other_type_fining": 0,
+            "other_type_flavor": 0,
+            "other_type_herb": 0,
+            "yeast_attenuation": 66.5,
+            "method_all_grain": 0,
+            "method_biab": 1,
+            "method_extract": 0,
+            "method_partial_mash": 0,
+            "yeast_form_dry": 0,
+            "yeast_form_liquid": 1,
+            "yeast_flocculation_high": 1,
+            "yeast_flocculation_low": 0,
+            "yeast_flocculation_medium": 0
+        }
+
         let beerJSON = {};
         // Add ternary checks for all features
         beerJSON.abv = parseFloat(this.state.abv);
@@ -129,7 +168,7 @@ export class InteractiveModel extends Component {
             headers: new Headers({
                 'Content-Type': 'application/json',
             }),
-            body: JSON.stringify(test)
+            body: JSON.stringify(star_1)
         })
             .then(response => {
                 if (!response.ok) throw response;
@@ -155,15 +194,15 @@ export class InteractiveModel extends Component {
     // generates random values around the mean per feature
     generateRandomValues = () => {
         this.setState({
-            abv: "" + this.getRandomArbitrary(1, 20),
-            ibu: "" + this.getRandomArbitrary(10, 80),
-            og: "" + this.getRandomArbitrary(1.05, 1.08),
-            fg: "" + this.getRandomArbitrary(1.009, 1.02),
-            gravDif: "" + this.getRandomArbitrary(.01, 2),
-            boil: "" + this.getRandomArbitrary(30, 90),
-            efficiency: "" + this.getRandomArbitrary(60, 70),
-            totalFerm: "" + this.getRandomArbitrary(5, 20),
-            baseMalt: "" + this.getRandomArbitrary(4, 20),
+            abv: "" + Math.round(this.getRandomArbitrary(1, 20) * 100) / 100,
+            ibu: "" + Math.round(this.getRandomArbitrary(10, 80) * 100) / 100,
+            og: "" + Math.round(this.getRandomArbitrary(1.05, 1.08) * 100) / 100,
+            fg: "" + Math.round(this.getRandomArbitrary(1.009, 1.02) * 100) / 100,
+            gravDif: "" + Math.round(this.getRandomArbitrary(.01, 2) * 100) / 100,
+            boil: "" + Math.round(this.getRandomArbitrary(30, 90)* 100) / 100,
+            efficiency: "" + Math.round(this.getRandomArbitrary(60, 70) * 100) / 100,
+            totalFerm: "" + Math.round(this.getRandomArbitrary(5, 20) * 100) / 100,
+            baseMalt: "" + Math.round(this.getRandomArbitrary(4, 20)* 100) / 100,
             crystalMalt: "0",
             roastedMalt: "0",
             otherFerm: "0",
@@ -173,10 +212,10 @@ export class InteractiveModel extends Component {
             accidulatedMalt: "0",
             fruitFerm: "0",
             glutenFreeMalt: "0",
-            pelletHops: "" + this.getRandomArbitrary(3, 20),
+            pelletHops: "" + Math.round(this.getRandomArbitrary(3, 20) * 100) / 100,
             wholeHops: "0",
             plugHops: "0",
-            attenRate: "" + this.getRandomArbitrary(72, 83),
+            attenRate: "" + Math.round(this.getRandomArbitrary(72, 83) * 100) / 100,
         });
 
         // featSelectForms.forEach((group) => {

@@ -51,8 +51,7 @@ export class DataPreparation extends Component {
                                 was not scalable and restricted us from actually being able to explore our data in attempt
                                 to capture some relationship. As a result, we had to utilize multiprocessing in order
                                 to scrape on separate processes. This proved to be effective as it shaved down our
-                                overall scraping time by a factor of 5 (~3 hours to scrape 100,000+ links). Scripts
-                                and documentation on how to utilize the scripts can be access here.
+                                overall scraping time by a factor of 5 (~3 hours to scrape 100,000+ links).
                             </p>
                             <h2>Feature Abstraction and Engineering</h2>
                             <p className="normal-para">
