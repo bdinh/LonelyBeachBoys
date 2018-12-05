@@ -8,7 +8,7 @@
     width: 50%;
     height: 3em;
     margin-left: 0!important;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-size: 4em;
 }
 
@@ -23,4 +23,10 @@
 
 .rating-jumbo {
     margin-top: 1em;
+}
+
+.button-grouping {
+    width:100%!important;
+    margin-top:3em!important;
+    margin-bottom:0!important;
 }
