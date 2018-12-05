@@ -2,6 +2,7 @@
   "name": "hops-n-props",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bdinh.github.io/hops-n-props",
   "dependencies": {
     "jquery": "^3.3.1",
     "popper.js": "^1.14.6",
