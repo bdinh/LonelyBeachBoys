@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/hops-n-props/precache-manifest.50537260b506964ee377bbdcd70d20f8.js"
+  "/LonelyBeachBoys/precache-manifest.cadc476d1bcc675e6df0a6d441a90bb9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/hops-n-props/index.html", {
+workbox.routing.registerNavigationRoute("/LonelyBeachBoys/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
