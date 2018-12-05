@@ -18,7 +18,7 @@ export class Homepage extends Component {
                             </Col>
                             <Col xs={12} md={6}>
                                 <p className="jumbotron-para">
-                                    What are the factors that go into making a popular homebrew?
+                                    Do quantifiable attributes of a homebrew recipe (such as fermentables, hop type, etc.) influence a beer’s popularity?
                                 </p>
                             </Col>
                         </Row>
@@ -28,16 +28,116 @@ export class Homepage extends Component {
                 <Grid>
                     <Row className="show-grid">
                         <Col xs={12}>
-                            <h2>Overview</h2>
-                            <p>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.</p>
+                            <h2>Background</h2>
+                            <p>Homebrewing is a hobby that has been gaining traction recently - the activity has a long
+                                and storied history, stretching back thousands of years, and is now embraced by people
+                                in the lab and garage alike. There are many different approaches, starting points, and
+                                strategies, but it all boils down to taking an unfermented grain derivative and turning
+                                it into beer (as if, as was previously thought, by magic). As it turns out, this is a
+                                rather complicated undertaking, and there are many communities devoted to figuring out
+                                how to brew good beer. These communities can be found everywhere from the university,
+                                to the dive bar, and the pursuit of brewing perfection pervades research papers as much
+                                as online forums.
+                            </p>
+                            <p>Chemists seem especially drawn to brewing, since, unlike most industrial fermentation
+                                processes designed to produce one thing in quantity which is then extracted and purified,
+                                beer is itself both the process and the final product - all the byproducts are a part of
+                                the beer (Gee & Ramirez, 1994). These chemists came up with a series of mathematical
+                                models to predict the growth of yeast and existence of extra flavor compounds such as
+                                fusel alcohols and esters in beer. Their models were far more rigorous than previous
+                                attempts, and continue to be cited today. They are imperfect, however, and don’t account
+                                for everything which can lead to off flavors - in fact, the science behind brewing good
+                                beer is incomplete, and new discoveries continue to be made (Olaniran, Hiralal, Mokoena
+                                & Pillay, 2017). The aforementioned necessity of by-products in beer and their tenuous
+                                relationship with the pallet are responsible for this complexity. For example, according
+                                to Olaniran et al. (2017), Isoamyl - which is a higher alcohol produced by yeast as part
+                                of the brewing process - is a sought after compound in beer due to its “heavy” effect on
+                                taste, but it leads to off flavors if it exceeds “20% of the total amount of n-propanol,
+                                isobutyl alcohol and isoamyl alcohol.” Many such balancing acts exist within the brewing
+                                process, and the difficulty they impart is exacerbated by the relatively few knobs and
+                                dials a brewer has at their disposal.</p>
+                            <p>
+                                A brewer bears more resemblance to a zookeeper than a cook, as their most important job
+                                is to keep the yeast happy, healthy, and entertained with the proper substances. Since
+                                the yeast is doing all the real work - eating, excreting, and eventually lying dormant
+                                at the bottom of a bottle (in this they bear a striking resemblance to the human race)
+                                - and since the balance of what they produce and for how long can be impacted by just
+                                about everything going on in the wort, every minor tweak to process or ingredient has a
+                                cascading effect throughout the beer. Even measuring properties like off flavors is a
+                                feat unknown to the bucket-brewer, requiring esoteric knowledge and equipment to even
+                                attempt. Marsili et al. (2007) make note that “Beer contains dozens of odor active
+                                chemical components in concentrations ranging from percent to parts-per-trillion (ppt)“
+                                as they propose a new method of quantitatively measuring off flavors in beer. Because
+                                the typical homebrewer cannot be expected to measure variation in compounds which are
+                                described in ppt, or understand the inner workings of a polydimethylsiloxane extraction,
+                                they are restricted to highly subjective qualitative analysis. Such analysis usually
+                                takes the form of “this tastes good,” or “this tastes like the inside of a shoe,” which
+                                is not especially useful except when taken in aggregate.
+                            </p>
+                            <p>
+                                As mentioned previously, a brewer has at their fingertips a number of knobs and dials,
+                                each of which has a multitude inscrutable, overlapping effects on the final product.
+                                These include standardized parameters and measures of the brewing process (such as boil
+                                time, original gravity (OG), final gravity (FG), chill method, pitch rate,
+                                hopping method, etc.) as well as the ingredients (attenuation, flocculation,
+                                yeast type, alpha acid units (AAU’s), hop type, etc.). We propose using these parameters
+                                to create a model capable of predicting the final quality of a beer. In doing so we hope
+                                to glean some insight into what aspects of the brewing process are most important to the
+                                final quality. Since it is almost as difficult to quantitatively assess the quality of
+                                the beer (which we define here as the absence of off flavors), we will be using
+                                aggregate recipe ratings sourced from a popular homebrew website as our metric. In this
+                                way we hope to predict beer quality based on features that a homebrewer has reasonable
+                                control over, and provide a utility that they can use to get an idea of how good a
+                                recipe might turn out before devoting the time and money required to brew it.
+                            </p>
                         </Col>
                         <Col xs={12}>
-                            <h2>Source</h2>
-                            <p>What the fuck did you just fucking say about me, you little bitch? I'll have you know I graduated top of my class in the Navy Seals, and I've been involved in numerous secret raids on Al-Quaeda, and I have over 300 confirmed kills. I am trained in gorilla warfare and I'm the top sniper in the entire US armed forces. You are nothing to me but just another target. I will wipe you the fuck out with precision the likes of which has never been seen before on this Earth, mark my fucking words. You think you can get away with saying that shit to me over the Internet? Think again, fucker. As we speak I am contacting my secret network of spies across the USA and your IP is being traced right now so you better prepare for the storm, maggot. The storm that wipes out the pathetic little thing you call your life. You're fucking dead, kid. I can be anywhere, anytime, and I can kill you in over seven hundred ways, and that's just with my bare hands. Not only am I extensively trained in unarmed combat, but I have access to the entire arsenal of the United States Marine Corps and I will use it to its full extent to wipe your miserable ass off the face of the continent, you little shit. If only you could have known what unholy retribution your little "clever" comment was about to bring down upon you, maybe you would have held your fucking tongue. But you couldn't, you didn't, and now you're paying the price, you goddamn idiot. I will shit fury all over you and you will drown in it. You're fucking dead, kiddo.</p>
+                            <h2>Data</h2>
+                            <p>
+                                We scraped all our data from brewersfriend.com, a website dedicated to sharing and
+                                rating homebrew recipes. Anyone can add or vote on a recipe, and the available recipes
+                                are not curated.
+                            </p>
+                            <h4>Data Collection</h4>
+                            <p>
+                                Add data scraping techniques here later
+                            </p>
+                            <h4>Feature Abstraction and Engineering</h4>
+                            <p>
+                                The final structure of the dataframe varied in some ways from the data on Brewers Friend.
+                                Many of the variables we wanted to train our model on were not readily quantifiable. In
+                                order to represent this data, we addressed each recipe component in turn and came up
+                                with a way to incorporate it into our dataframe.
+                            </p>
+                            <p>
+                                The Fermentables section lists the many substances which make up the majority of the mash.
+                                These substances provide the yeast with sugar, which it turns into ethanol, carbon dioxide,
+                                and a number of other by-products. A typical fermentables section on Brewers Friend looks
+                                like the following:
+                            </p>
+
+                        </Col>
+                        <Col xs={12}>
+                            <h2>Sources</h2>
+                            <p>Marsili, R. T., Laskonis, L. C., and Kenaan, C. (2007) Evaluation of PDMS-Based
+                                Extraction Techniques and GC-TOFMS for the Analysis of Off-Flavor Chemicals in Beer,
+                                Journal of the American Society of Brewing Chemists, 65:3, 129-137, DOI: 10.1094/ASBCJ-2007-0617-01
+                            </p>
+                            <p>
+                                Olaniran, A. O., Hiralal, L., Mokoena, M. P., and Pillay, B. (2017) Flavour‐active
+                                volatile compounds in beer: production, regulation and control. J. Inst. Brew.,
+                                123: 13–23. doi: 10.1002/jib.389.
+                            </p>
+                            <p>
+                                Gee, D. A. and Ramirez, W. F. (1994), A FLAVOUR MODEL FOR BEER FERMENTATION. Journal of
+                                the Institute of Brewing, 100: 321-329. doi:10.1002/j.2050-0416.1994.tb00830.x
+                            </p>
                         </Col>
                         <Col xs={12}>
                             <h2>Needed for project:</h2>
-                            <p>The purpose of the project, source of the data, and any pertinent information about the topic area are introduced. You may also want to include links to the code, or information about the team.</p>
+                            <p>The purpose of the project, source of the data, and any pertinent information about the
+                                topic area are introduced. You may also want to include links to the code, or
+                                information about the team.</p>
                         </Col>
                     </Row>
                 </Grid>
