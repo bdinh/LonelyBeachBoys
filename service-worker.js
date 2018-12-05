@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/LonelyBeachBoys/precache-manifest.1f2636b2cfde0f52595e39d6b72691a7.js"
+  "/LonelyBeachBoys/precache-manifest.cede63cd34c9aa4ec9ed46da48986823.js"
 );
 
 workbox.clientsClaim();
