@@ -2,3 +2,16 @@
     margin-left: 1em!important;
     margin-right: 1em!important;
 }
+
+.run-button {
+    display: inline-block;
+    width: 50%;
+    height: 3em;
+    margin-left: 0!important;
+    margin-top: 1em;
+    font-size: 4em;
+}
+
+.forms-buttons {
+    display: flex;
+}
