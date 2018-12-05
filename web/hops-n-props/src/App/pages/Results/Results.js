@@ -67,16 +67,34 @@ export class Results extends Component {
                                 <li className="normal-para"><b>Early_stopping</b>: False</li>
                             </ul>
                             <p className="normal-para">
-                                We trained the model using a 25% test-train-split, and split the training data into 10 different folds for cross-validation. All data was normalized using a min-max scaler prior to being fed through the model.
+                                We trained the model using a 25% test-train-split, and split the training data into 10 different folds for cross-validation. All data was normalized
+                                using a min-max scaler prior to being fed through the model.
                             </p>
                             <p className="normal-para">
-                                We had a 60.50% score in the beginning, but after investigating the results we realized the model was only ever predicting 5.0, regardless of features. This was due to the prevalence of high scores in our outcomes, so we changed the activation from logistic to relu, and increased hidden layer size from 10 to 100. After these changes our predictive score went down 2%, but we were predicting a much broader spectrum of scores, so we elected to use this model.
+                                We had a 60.50% score in the beginning, but after investigating the results we realized the model was only ever predicting 5.0, regardless of features.
+                                This was due to the prevalence of high scores in our outcomes, so we changed the activation from logistic to relu, and increased hidden layer size from
+                                10 to 100. After these changes our predictive score went down 2%, but we were predicting a much broader spectrum of scores, so we elected to use this model.
                             </p>
                         </Col>
 
                         <Col xs={12}>
                             <h2>Final Thoughs</h2>
-                            <p className="normal-para">Even though a neural net is something of a black box when it comes to determining which features had an impact on the score, we can say with confidence that the quantifiable features of a homebrew recipe have a measurable effect on a beer’s popularity. The 58.54% accuracy we arrived at is not ideal, but it’s more accurate than a coin flip, and allows us to put some confidence in the model. Using our Neural Net, we set up an interactive app which returns an expected popularity based on the parameters it’s passed. It can be used to gain a rough idea of how good a recipe is before time and money are spent to brew it. Even though it cannot provide recommendations on how the beer could be improved, the score it returns can still be used as an indicator of whether the recipe is good as is, or if it should be improved.
+                            <p className="normal-para">
+                                Even though a neural net is something of a black box when it comes to determining which features had an impact on the score, we can say with 
+                                confidence that the quantifiable features of a homebrew recipe have a measurable effect on a beer’s popularity. The 58.54% accuracy we
+                                arrived at is not ideal, but it’s more accurate than a coin flip, and allows us to put some confidence in the model. Using our Neural Net, we set up an
+                                interactive app which returns an expected popularity based on the parameters it’s passed. It can be used to gain a rough idea of how good a recipe is before
+                                time and money are spent to brew it. Even though it cannot provide recommendations on how the beer could be improved, the score it returns can still be used
+                                as an indicator of whether the recipe is good as is, or if it should be improved. Thus, the answer to our research question, <b>"Do quantifiable attributes of 
+                                a homebrew recipe (such as fermentables, hop type, etc.) influence a beer’s popularity?"</b>, is a tentative <b>"yes"</b>. 
+                            </p>
+                            <p className="normal-para">
+                                That said, the predictive model proves itself to be overfit to the data. As is the nature of nerual networks, this is fundamentally a problem of too little data - a problem that
+                                in this situation is very difficult to overcome. Scraping <a href="https://www.brewersfriend.com/">brewersfriend.com</a> for recipes provided us an incredible 100,000
+                                rows, however only about 2,000 of them had actual ratings associated with them. Among these rated recipes, the distribution of ratings was very high - the large majority of ratings
+                                being 4 or 5 stars. This uneven distribution means that our neural network simply does not have enough 1, 2, and 3 star recipes to accuraley train on. Further, the complexity and time
+                                required to test homebrew recipes and provide ratings for ourselves is prohibitivley high. Expanding and improving upon this model would likely require creatively scraping and combining 
+                                ratings from other sites, or simply waiting for more recipes to be rated over time. 
                             </p>
                         </Col>
                     </Row>
