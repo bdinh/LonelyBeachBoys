@@ -284,7 +284,7 @@ export class InteractiveModel extends Component {
             headers: new Headers({
                 'Content-Type': 'application/json',
             }),
-            body: JSON.stringify(star5)
+            body: JSON.stringify(star3)
         })
             .then(response => {
                 if (!response.ok) throw response;
