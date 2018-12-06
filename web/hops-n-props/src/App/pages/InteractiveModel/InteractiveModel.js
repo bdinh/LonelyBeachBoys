@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './InteractiveModel.css';
-import { Form, Button, ButtonToolbar, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid, Glyphicon } from 'react-bootstrap';
+import { Form, Button, ButtonToolbar, ButtonGroup, FormGroup, ControlLabel, FormControl, Row, Col, Jumbotron, Grid, Glyphicon } from 'react-bootstrap';
 
 const featTextForms =
     [[{ id: "abv-form", name: "abv", label: "Alcohol by Volume (ABV)" }, { id: "ibu-form", name: "ibu", label: "International Bittering Units (IBU)" }],
@@ -46,199 +46,6 @@ export class InteractiveModel extends Component {
     };
 
     handleButton = () => {
-        let star1 = {
-            "abv": 22.05,
-            "ibu": 0.0,
-            "diff_g": 0.168,
-            "boil_time": 60,
-            "efficiency": 70.0,
-            "ferm_total_weight": 40.0,
-            "ferm_type_base_malt": 0.0,
-            "ferm_type_crystal_malt": 0.0,
-            "ferm_type_roasted_malt": 0.0,
-            "ferm_type_other": 0.0,
-            "ferm_type_extract": 0.0,
-            "ferm_type_sugar": 0.0,
-            "ferm_type_raw": 0.0,
-            "ferm_type_acidulated_malt": 0.0,
-            "ferm_type_fruit": 40.0,
-            "ferm_type_gluten_free_malt": 0,
-            "hops_type_pellet": 0.0,
-            "hops_type_leaf_whole": 0.0,
-            "hops_type_plug": 0.0,
-            "other_type_spice": 0,
-            "other_type_water_agt": 0,
-            "other_type_other": 0,
-            "other_type_fining": 0,
-            "other_type_flavor": 0,
-            "other_type_herb": 0,
-            "yeast_attenuation": 75.0,
-            "method_all_grain": 1,
-            "method_biab": 0,
-            "method_extract": 0,
-            "method_partial_mash": 0,
-            "yeast_form_dry": 0,
-            "yeast_form_liquid": 1,
-            "yeast_flocculation_high": 0,
-            "yeast_flocculation_low": 0,
-            "yeast_flocculation_medium": 1
-        }
-
-        let star2 = {
-            "abv": 12.39,
-            "ibu": 0,
-            "diff_g": 0.094,
-            "boil_time": 15,
-            "efficiency": 35.0,
-            "ferm_total_weight": 5.820197,
-            "ferm_type_base_malt": 0.0,
-            "ferm_type_crystal_malt": 0.0,
-            "ferm_type_roasted_malt": 0.0,
-            "ferm_type_other": 0.0,
-            "ferm_type_extract": 0.0,
-            "ferm_type_sugar": 0.0,
-            "ferm_type_raw": 0.0,
-            "ferm_type_acidulated_malt": 0.0,
-            "ferm_type_fruit": 5.820197,
-            "ferm_type_gluten_free_malt": 0,
-            "hops_type_pellet": 0.0,
-            "hops_type_leaf_whole": 0.0,
-            "hops_type_plug": 0.0,
-            "other_type_spice": 0,
-            "other_type_water_agt": 0,
-            "other_type_other": 0,
-            "other_type_fining": 0,
-            "other_type_flavor": 0,
-            "other_type_herb": 0,
-            "yeast_attenuation": 75.5,
-            "method_all_grain": 0,
-            "method_biab": 0,
-            "method_extract": 1,
-            "method_partial_mash": 0,
-            "yeast_form_dry": 0,
-            "yeast_form_liquid": 1,
-            "yeast_flocculation_high": 0,
-            "yeast_flocculation_low": 0,
-            "yeast_flocculation_medium": 1
-        }
-
-        let star3 = {
-            "abv": 5.92,
-            "ibu": 38.66,
-            "diff_g": 0.045,
-            "boil_time": 60,
-            "efficiency": 61.0,
-            "ferm_total_weight": 13.5,
-            "ferm_type_base_malt": 11.0,
-            "ferm_type_crystal_malt": 1.0,
-            "ferm_type_roasted_malt": 0.0,
-            "ferm_type_other": 0.75,
-            "ferm_type_extract": 0.0,
-            "ferm_type_sugar": 0.0,
-            "ferm_type_raw": 0.75,
-            "ferm_type_acidulated_malt": 0.0,
-            "ferm_type_fruit": 0.0,
-            "ferm_type_gluten_free_malt": 0.0,
-            "hops_type_pellet": 0.25,
-            "hops_type_leaf_whole": 0.0,
-            "hops_type_plug": 0.0,
-            "other_type_spice": 0,
-            "other_type_water_agt": 0,
-            "other_type_other": 1,
-            "other_type_fining": 0,
-            "other_type_flavor": 0,
-            "other_type_herb": 0,
-            "yeast_attenuation": 77.0,
-            "method_all_grain": 1,
-            "method_biab": 0,
-            "method_extract": 0,
-            "method_partial_mash": 0,
-            "yeast_form_dry": 1,
-            "yeast_form_liquid": 0,
-            "yeast_flocculation_high": 1,
-            "yeast_flocculation_low": 0,
-            "yeast_flocculation_medium": 0
-        }
-
-        let star4 = {
-            "abv": 5.92,
-            "boil_time": 60,
-            "diff_g": 0.045,
-            "efficiency": 61.0,
-            "ferm_total_weight": 13.5,
-            "ferm_type_acidulated_malt": 0,
-            "ferm_type_base_malt": 11.0,
-            "ferm_type_crystal_malt": 1.0,
-            "ferm_type_extract": 0,
-            "ferm_type_fruit": 0,
-            "ferm_type_gluten_free_malt": 0,
-            "ferm_type_other": 0.75,
-            "ferm_type_raw": 0,
-            "ferm_type_roasted_malt": 0,
-            "ferm_type_sugar": 0,
-            "hops_type_leaf_whole": 0,
-            "hops_type_pellet": 0.25,
-            "hops_type_plug": 0,
-            "ibu": 38.66,
-            "method_all_grain": 1,
-            "method_biab": 0,
-            "method_extract": 0,
-            "method_partial_mash": 0,
-            "other_type_fining": 0,
-            "other_type_flavor": 0,
-            "other_type_herb": 0,
-            "other_type_other": 1,
-            "other_type_spice": 0,
-            "other_type_water_agt": 0,
-            "yeast_attenuation": 77.0,
-            "yeast_flocculation_high": 1,
-            "yeast_flocculation_low": 0,
-            "yeast_flocculation_medium": 0,
-            "yeast_form_dry": 1,
-            "yeast_form_liquid": 0
-        }
-
-        let star5 = {
-            "abv": 5.58,
-            "ibu": 40.12,
-            "diff_g": 0.042,
-            "boil_time": 70,
-            "efficiency": 79.0,
-            "ferm_total_weight": 12.41,
-            "ferm_type_base_malt": 11.5,
-            "ferm_type_crystal_malt": 0.90875,
-            "ferm_type_roasted_malt": 0.0,
-            "ferm_type_other": 0.0,
-            "ferm_type_extract": 0.0,
-            "ferm_type_sugar": 0.0,
-            "ferm_type_raw": 0.0,
-            "ferm_type_acidulated_malt": 0.0,
-            "ferm_type_fruit": 0.0,
-            "ferm_type_gluten_free_malt": 0.0,
-            "hops_type_pellet": 0.375,
-            "hops_type_leaf_whole": 0.0,
-            "hops_type_plug": 0.0,
-            "other_type_spice": 0,
-            "other_type_water_agt": 0,
-            "other_type_other": 1,
-            "other_type_fining": 0,
-            "other_type_flavor": 0,
-            "other_type_herb": 0,
-            "yeast_attenuation": 81.0,
-            "method_all_grain": 1,
-            "method_biab": 0,
-            "method_extract": 0,
-            "method_partial_mash": 0,
-            "yeast_form_dry": 1,
-            "yeast_form_liquid": 0,
-            "yeast_flocculation_high": 0,
-            "yeast_flocculation_low": 0,
-            "yeast_flocculation_medium": 1
-        }
-
-
-
-
 
         let beerJSON = {};
         // Add ternary checks for all features
@@ -261,22 +68,22 @@ export class InteractiveModel extends Component {
         beerJSON.hops_type_pellet = parseFloat(this.state.pelletHops);
         beerJSON.hops_type_leaf_whole = parseFloat(this.state.wholeHops);
         beerJSON.hops_type_plug = parseFloat(this.state.plugHops);
-        beerJSON.other_type_spice = this.state.containSpice == "yes" ? 1 : 0;
-        beerJSON.other_type_water_agt = this.state.containOther == "yes" ? 1 : 0;
-        beerJSON.other_type_other = this.state.containOther == "yes" ? 1 : 0;
-        beerJSON.other_type_fining = this.state.containFinings == "yes" ? 1 : 0;
-        beerJSON.other_type_flavor = this.state.containFlavors == "yes" ? 1 : 0;
-        beerJSON.other_type_herb = this.state.containHerbs == "yes" ? 1 : 0;
+        beerJSON.other_type_spice = this.state.containSpice === "yes" ? 1 : 0;
+        beerJSON.other_type_water_agt = this.state.containOther === "yes" ? 1 : 0;
+        beerJSON.other_type_other = this.state.containOther === "yes" ? 1 : 0;
+        beerJSON.other_type_fining = this.state.containFinings === "yes" ? 1 : 0;
+        beerJSON.other_type_flavor = this.state.containFlavors === "yes" ? 1 : 0;
+        beerJSON.other_type_herb = this.state.containHerbs === "yes" ? 1 : 0;
         beerJSON.yeast_attenuation = parseFloat(this.state.attenRate);
-        beerJSON.method_all_grain = this.state.method == "all_grain" ? 1 : 0;
-        beerJSON.method_biab = this.state.method == "biab" ? 1 : 0;
-        beerJSON.method_extract = this.state.method == "extract" ? 1 : 0;
-        beerJSON.method_partial_mash = this.state.method == "partial_mash" ? 1 : 0;
-        beerJSON.yeast_form_dry = this.state.yeastType == "dry" ? 1 : 0;
-        beerJSON.yeast_form_liquid = this.state.yeastType == "liquid" ? 1 : 0;
-        beerJSON.yeast_flocculation_high = this.state.flocculation == "high" ? 1 : 0;
-        beerJSON.yeast_flocculation_low = this.state.flocculation == "low" ? 1 : 0;
-        beerJSON.yeast_flocculation_medium = this.state.flocculation == "medium" ? 1 : 0;
+        beerJSON.method_all_grain = this.state.method === "all_grain" ? 1 : 0;
+        beerJSON.method_biab = this.state.method === "biab" ? 1 : 0;
+        beerJSON.method_extract = this.state.method === "extract" ? 1 : 0;
+        beerJSON.method_partial_mash = this.state.method === "partial_mash" ? 1 : 0;
+        beerJSON.yeast_form_dry = this.state.yeastType === "dry" ? 1 : 0;
+        beerJSON.yeast_form_liquid = this.state.yeastType === "liquid" ? 1 : 0;
+        beerJSON.yeast_flocculation_high = this.state.flocculation === "high" ? 1 : 0;
+        beerJSON.yeast_flocculation_low = this.state.flocculation === "low" ? 1 : 0;
+        beerJSON.yeast_flocculation_medium = this.state.flocculation === "medium" ? 1 : 0;
         // console.log(this.state);
 
         fetch("https://api.bdinh.me/v1/beer", {
@@ -284,7 +91,7 @@ export class InteractiveModel extends Component {
             headers: new Headers({
                 'Content-Type': 'application/json',
             }),
-            body: JSON.stringify(star3)
+            body: JSON.stringify(beerJSON)
         })
             .then(response => {
                 if (!response.ok) throw response;
@@ -298,6 +105,187 @@ export class InteractiveModel extends Component {
                 console.log(error)
             })
     };
+
+    handleExampleButton = (star) => {
+        if (star === "one") {
+            // One Star
+            this.setState({
+                abv: "22.05",
+                ibu: "0.0",
+                og: "0.168",
+                fg: "0.168",
+                boil: "60",
+                efficiency: "70.0",
+                totalFerm: "40.0",
+                baseMalt: "0.0",
+                crystalMalt: "0.0",
+                roastedMalt: "0.0",
+                otherFerm: "0.0",
+                extract: "0.0",
+                sugars: "0.0",
+                rawFerm: "0.0",
+                accidulatedMalt: "0.0",
+                fruitFerm: "40.0",
+                glutenFreeMalt: "0.0",
+                pelletHops: "0.0",
+                wholeHops: "0.0",
+                plugHops: "0.0",
+                attenRate: "75.0",
+
+                flocculation: "medium",
+                method: "all_grain",
+                containSpice: "no",
+                containFinings: "no",
+                containFlavors: "no",
+                containHerbs: "no",
+                containOther: "no",
+                containWater: "no",
+                yeastType: "liquid"
+            });
+        } else if (star === "two") {
+
+            // Two Star
+            this.setState({
+                abv: "12.39",
+                ibu: "0.0",
+                og: "0.094",
+                fg: "0.094",
+                boil: "15",
+                efficiency: "35.0",
+                totalFerm: "5.82097",
+                baseMalt: "0.0",
+                crystalMalt: "0.0",
+                roastedMalt: "0.0",
+                otherFerm: "0.0",
+                extract: "0.0",
+                sugars: "0.0",
+                rawFerm: "0.0",
+                accidulatedMalt: "0.0",
+                fruitFerm: "5.820197",
+                glutenFreeMalt: "0.0",
+                pelletHops: "0.0",
+                wholeHops: "0.0",
+                plugHops: "0.0",
+                attenRate: "75.5",
+
+                flocculation: "medium",
+                method: "extract",
+                containSpice: "no",
+                containFinings: "no",
+                containFlavors: "no",
+                containHerbs: "no",
+                containOther: "no",
+                containWater: "no",
+                yeastType: "liquid"
+            });
+        } else if (star === "three") {
+            // three Star
+            this.setState({
+                abv: "5.92",
+                ibu: "38.66",
+                og: "0.046",
+                fg: "0.001",
+                boil: "60",
+                efficiency: "61.0",
+                totalFerm: "13.5",
+                baseMalt: "11.0",
+                crystalMalt: "1.0",
+                roastedMalt: "0.0",
+                otherFerm: "0.75",
+                extract: "0.0",
+                sugars: "0.0",
+                rawFerm: "0.75",
+                accidulatedMalt: "0.0",
+                fruitFerm: "0.0",
+                glutenFreeMalt: "0.0",
+                pelletHops: "0.25",
+                wholeHops: "0.0",
+                plugHops: "0.0",
+                attenRate: "77.0",
+
+                flocculation: "high",
+                method: "all_grain",
+                containSpice: "no",
+                containFinings: "no",
+                containFlavors: "no",
+                containHerbs: "no",
+                containOther: "yes",
+                containWater: "no",
+                yeastType: "dry"
+            });
+        } else if (star === "four") {
+            // four Star
+            this.setState({
+                abv: "5.58",
+                ibu: "40.12",
+                og: "0.042",
+                fg: "0.042",
+                boil: "70",
+                efficiency: "79.0",
+                totalFerm: "12.41",
+                baseMalt: "11.5",
+                crystalMalt: ".90875",
+                roastedMalt: "0.0",
+                otherFerm: "0.0",
+                extract: "0.0",
+                sugars: "0.0",
+                rawFerm: "0.0",
+                accidulatedMalt: "0.0",
+                fruitFerm: "0.0",
+                glutenFreeMalt: "0.0",
+                pelletHops: "0.375",
+                wholeHops: "0.0",
+                plugHops: "0.0",
+                attenRate: "81.0",
+
+                flocculation: "medium",
+                method: "all_grain",
+                containSpice: "no",
+                containFinings: "no",
+                containFlavors: "no",
+                containHerbs: "no",
+                containOther: "yes",
+                containWater: "no",
+                yeastType: "dry"
+            });
+        } else if (star === "five") {
+            // five Star
+            this.setState({
+                abv: "5.92",
+                ibu: "38.66",
+                og: "0.045",
+                fg: "0.045",
+                boil: "60",
+                efficiency: "61.0",
+                totalFerm: "13.5",
+                baseMalt: "11.0",
+                crystalMalt: "1.0",
+                roastedMalt: "0.0",
+                otherFerm: "0.75",
+                extract: "0.0",
+                sugars: "0.0",
+                rawFerm: "0.0",
+                accidulatedMalt: "0.0",
+                fruitFerm: "0.0",
+                glutenFreeMalt: "0.0",
+                pelletHops: "0.25",
+                wholeHops: "0.0",
+                plugHops: "0.0",
+                attenRate: "77.0",
+
+                flocculation: "high",
+                method: "all_grain",
+                containSpice: "no",
+                containFinings: "no",
+                containFlavors: "no",
+                containHerbs: "no",
+                containOther: "yes",
+                containWater: "no",
+                yeastType: "dry"
+            });
+        }
+
+    }
 
     getRandomArbitrary = (min, max) => {
         return Math.random() * (max - min) + min;
@@ -314,11 +302,10 @@ export class InteractiveModel extends Component {
             ibu: "" + Math.round(this.getRandomArbitrary(10, 80) * 100) / 100,
             og: "" + Math.round(this.getRandomArbitrary(1.05, 1.08) * 100) / 100,
             fg: "" + Math.round(this.getRandomArbitrary(1.009, 1.02) * 100) / 100,
-            gravDif: "" + Math.round(this.getRandomArbitrary(.01, 2) * 100) / 100,
-            boil: "" + Math.round(this.getRandomArbitrary(30, 90)* 100) / 100,
+            boil: "" + Math.round(this.getRandomArbitrary(30, 90) * 100) / 100,
             efficiency: "" + Math.round(this.getRandomArbitrary(60, 70) * 100) / 100,
             totalFerm: "" + Math.round(this.getRandomArbitrary(5, 20) * 100) / 100,
-            baseMalt: "" + Math.round(this.getRandomArbitrary(4, 20)* 100) / 100,
+            baseMalt: "" + Math.round(this.getRandomArbitrary(4, 20) * 100) / 100,
             crystalMalt: "0",
             roastedMalt: "0",
             otherFerm: "0",
@@ -334,18 +321,6 @@ export class InteractiveModel extends Component {
             attenRate: "" + Math.round(this.getRandomArbitrary(72, 83) * 100) / 100,
         });
 
-        // featSelectForms.forEach((group) => {
-        //     group.forEach((item) => {
-        //         if (item.options === "default") {
-        //             let array = ["yes", "no"];
-        //             let option = array[this.getRandomIntInclusive(1)];
-        //             this.setState({ [item.name]: option });
-        //         } else if (item.id !== "none") {
-        //             let option = item.options[this.getRandomIntInclusive(item.options.length - 1)].value;
-        //             this.setState({ [item.name]: option });
-        //         }
-        //     })
-        // })
     }
 
     render() {
@@ -428,6 +403,16 @@ export class InteractiveModel extends Component {
                         })
                     }
                 </Form>
+
+                <ButtonToolbar>
+                    <ButtonGroup bsSize="large" className="button-grouping">
+                        <Button onClick={() => this.handleExampleButton("one")}>One Star Preset</Button>
+                        <Button onClick={() => this.handleExampleButton("two")}>Two Star Preset</Button>
+                        <Button onClick={() => this.handleExampleButton("three")}>Three Star Preset</Button>
+                        <Button onClick={() => this.handleExampleButton("four")}>Four Star Preset</Button>
+                        <Button onClick={() => this.handleExampleButton("five")}>Five Star Preset</Button>
+                    </ButtonGroup>
+                </ButtonToolbar>
 
                 <ButtonToolbar className="forms-buttons">
                     <Button bsStyle="warning" bsSize="large" className="run-button" onClick={this.generateRandomValues} > Get Started </Button>

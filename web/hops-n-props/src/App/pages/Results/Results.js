@@ -15,7 +15,7 @@ export class Results extends Component {
                             </Col>
                             <Col xs={12} md={6}>
                                 <p className="jumbotron-para results-jumbo">
-                                    What to take away from it.
+                                    What to take away from it all.
                                 </p>
                             </Col>
                         </Row>
