@@ -10,7 +10,7 @@ author:
   - name: Naman Mehra
     email: naman26@uw.edu 
     affiliation: University of Washington
-  - name: Sam Otto
+  - name: Samuel Otto
     email: moffotto@uw.edu
     affiliation: University of Washington
 abstract: |
@@ -118,21 +118,21 @@ After these transformations, we dropped every row without a rating. These could 
 
 ![Pairplot with pearson correlation between rating values and all other features](./images/Trend.jpeg)
 
-# Results
-## The Outcome
-Our outcome of interest was the aggregate rating for a given recipe. This rating was derived from the average of all reviews submitted for a given beer. The overall review was continuous (rounded to two decimal places), but each individual review was categorical, being one of 1, 2, 3, 4, or 5 stars. Because of this, we eventually decided to use a classifier to predict results instead of a regressor. In order to classify our outcome, we rounded each review score to the nearest 0.25 increment. This allowed us to achieve a middle ground between the categorical nature of the individual reviews, and the continuous nature of the aggregate.
-
 ## Pipeline Construction 
 In order to train and test our models, we assembled an sklearn pipeline using the following common parameters. Each model we created used a 75-25% train-test split, and was cross validated across 10 different shuffled folds. Each feature was normalized to a scale between 0 and 1 to allow the models to train on them.
 
-## Training Begins
-Initially we considered our rating value as a continuous variable since the ratings for recipes were between 0 and 5 with an accuracy of two decimals. With that in mind we decided to use generalized regression models. Since we had such a large dataset with more than 30 features we decided to use SVR and Ridge regressions as well as a Neural Network Regressor. We ran grid search on all of these models to select the best parameters and fine tune the model. Unfortunately, each model resulted in a very poor accuracy score.
+## Training
+Our outcome of interest was the aggregate rating for a given recipe. This rating was derived from the average of all reviews submitted for a given beer. Initially we considered this rating value as a continuous variable since the ratings for recipes were between 0 and 5 with an accuracy of two decimals. With that in mind we decided to used generalized regression models. Since we had such a large dataset with more than 30 features we decided to use SVR and Ridge regressions as well as a Neural Network Regressor. We ran grid search on all of these models to select the best parameters and fine tune the model. Unfortunately, each model resulted in a very poor accuracy score. 
 
+Each individual review was categorical, being one of 1, 2, 3, 4, or 5 stars. Because of this, we eventually decided to use a classifier to predict results instead of a regressor. In order to classify our outcome, we rounded each review score to the nearest 0.25 increment. This allowed us to achieve a middle ground between the categorical nature of the individual reviews, and the continuous nature of the aggregate. The classifiers attempted were KNN and a multilayer perceptron neural network.
+
+
+# Results
+
+## Initial Models
 Ridge regression gave us a score of 0.02% while SVR fit such a poor model that we received a negative score. The Neural Net Regression yielded an accuracy of 3%, and our best models, random forest and XGBoost regressor, both got 10% accuracy.
 
-We made the collective decision to transform our outcome variable into a categorical variable. We rounded the rating value to the nearest fourth. For example, 4.14 would be rounded to 4.25. This meant that we broke up the scale of 0 to 5 into 20 even categories.
-
-Once this was done, we decided to use classifier models to try to predict the category the ratings belonged in, instead of a continuous number. We initially used a KNN classifier, which resulted in a 53.05% score - a massive improvement which led us to our final model with newfound confidence.
+Following the decision to transform our outcome variable into a categorical variable, we rounded the rating value to the nearest fourth. For example, 4.14 would be rounded to 4.25. This meant that we broke up the scale of 0 to 5 into 20 even categories. Once this was done, we decided to use classifier models to try to predict the category the ratings belonged in, instead of a continuous number. We initially used a KNN classifier, which resulted in a 53.05% score - a massive improvement which led us to our final model with newfound confidence.
 
 ## Final Model
 Our final model was a Neural Network Classifier, which achieved a 58.54% accuracy using the following hyperparameters selected through grid search:
@@ -149,21 +149,32 @@ Our final model was a Neural Network Classifier, which achieved a 58.54% accurac
 
 We had a 60.50% score in the beginning, but after investigating the results we realized the model was only ever predicting 5.0, regardless of input features. This was due to the prevalence of high scores in our outcomes, so we changed the activation from logistic to relu, and increased hidden layer size from 10 to 100. After these changes our predictive score went down 2%, but we were predicting a much broader spectrum of scores, so we elected to use this model.
 
-# Discussion
-There are several different use cases and implications from our research and project. Our goal from the start was to make the area of homebrewing easily accessible and open it up to everyone. 
+## Analysis
+Even though a neural net is something of a black box when it comes to determining which features had an impact on the score, we can say with confidence that the quantifiable features of a homebrew recipe have a measurable effect on a beer’s popularity. The 58.54% accuracy we arrived at is not ideal, but it’s more accurate than a coin flip, and allows us to put some confidence in the model. Thus, the answer to our research question, "Do quantifiable attributes of a homebrew recipe (such as fermentables, hop type, etc.) influence a beer’s popularity?", is a tentative "yes".
 
-The domain of homebrewing is niche and not many people are aware of the complexity behind brewing a good brew or ale at home. Even people who are experienced in brewing at home have to spend enormous amounts of time playing around with the ratios of different features such as original and final gravity, fermentation types and weights of hops to produce the best possible outcome. We believe our model and online resource helps experts try out different combinations of features before spending time, money and effort in brewing something they possibly will not like. 
+That said, the predictive model proves itself to be overfit to the data. Looking at the distributions for actual vs. predicted scores below, we see that the model is still heavily distributed towards predicting a score of 5.
+
+![Distribution of actual rating values of the test data compared with the distribution of predictions on test features.](./images/prediction_viz.png)
+
+As is the nature of nerual networks, this is fundamentally a problem of too little data - a problem that in this situation is very difficult to overcome. Scraping brewersfriend.com for recipes provided us an incredible 100,000 rows, however only about 2,000 of them had actual ratings associated with them. Among these rated recipes, the distribution of ratings was very high - the large majority of ratings being 4 or 5 stars. This uneven distribution means that our neural network simply does not have enough 1, 2, and 3 star recipes to accuraley train on. Further, the complexity and time required to test homebrew recipes and provide ratings for ourselves is prohibitivley high. Expanding and improving upon this model would likely require creatively scraping and combining ratings from other sites, or simply waiting for more recipes to be rated over time.
+
+
+# Discussion
+There are several different use cases and implications from our research and project. The homebrewing field is rapidly growing and many people from around the world are approaching this new hobby. Currently there are numerous articles, tutorials and videos on getting started. However, there is a lack of information regarding the specific features that go into developing a great brew. A lot of the advice found on the internet or through friends suggests playing around with and using the trial and error method to find good combinations. We sought out to take a scientific approach and therefore developed this model and tool. Our goal from the start was to make the area of homebrewing easily accessible and open it up to everyone. 
+
+The domain of crafting original homebrews, however, is niche and not many people are aware of the complexity behind brewing a good brew or ale at home. Even people who are experienced in brewing at home have to spend enormous amounts of time playing around with the ratios of different features such as original and final gravity, fermentation types and weights of hops to produce the best possible outcome. We believe our model and online resource helps experts try out different combinations of features before spending time, money and effort in brewing something they possibly will not like. 
 
 In addition to helping experts we hope our tool and insights can make the activity of homebrewing easier to approach and try out. It can be used by novices who intend on getting into the hobby. Understanding the features and the effect of differing ratios on the final result can greatly decrease the initial learning curve. 
 
 
 # Future Work
-Our model and online resources are a great place to start and have a wide range of impacts. However, we understand the tate of ales is highly subjective. In that some consumers might enjoy a homebrew and rate it five stars while other might detest it and rate if much lower. Due to the high levels of subjectivity involved in an area like beers and ales we should consider how we can tailor the ratings to the needs of the customers. 
+Our model and online resources are a great place to start and have a range of impacts. However, we understand the taste of ales is highly subjective. Not only in that some consumers might enjoy a homebrew and rate it five stars while other might detest it and rate if much lower, but also in that any two consumers may have very different standards for what constitutes a certain rating. Due to the high levels of subjectivity involved in an area like beers and ales we should consider how we can tailor the ratings to the needs of the customers. 
 
-One way we could approach this in the future is ask customers about their taste preferences before letting them play around with our online tool. By collecting data points on their likes and dislikes pertaining to ABV, fermentation types and other features. We can change our predictive model to recommend (give higher ratings) to beers and ales that are similar to ones they already like. 
+One way we could approach this in the future is ask customers about their taste preferences before letting them play around with our online tool. By collecting data points on their likes and dislikes pertaining to ABV, fermentation types and other features. We can change our predictive model to recommend (give higher ratings) to beers and ales that are similar to ones they already like. To further build upon and improve our predictive machine learning model we can initially take two simple yet effective steps. The first one is increase the amount of data fed into training our model. This would improve the accuracy score from the current 58%. An issue with this could be that we overfit our model; however, since most of our data is restricted within a strict range it is unlikely this would be an issue. 
 
-To further build upon and improve our predictive machine learning model we can initially take two simple yet effective steps. The first one is increase the amount of data fed into training our model. This would improve the accuracy score from the current 58%. An issue with this could be that we overfit our model; however, since most of our data is restrict within a strict range it is unlikely this would be an issue. The second step we could take is increase the number of features that we train our model on. Currently, we narrowed our features from more than 60 to about 30. However, by including more features the model can possibly increase its predictive power. With this we can also think about how the ratios of different features play a role in determining the final outcome. It is significant to note that many of these features are codependent in that the the rating of a homebrew depends on the ratio and balance of two or more features in our data. 
+The second step we could take is increase the number of features that we train our model on. Currently, we narrowed our features from more than 60 to about 30. However, by including more features the model can possibly increase its predictive power. With this we can also think about how the ratios of different features play a role in determining the final outcome. It is significant to note that many of these features are codependent in that the the rating of a homebrew depends on the ratio and balance of two or more features in our data. An approach to practically solving this could be, users select the features they want set and then our model helps recommends quantities of other attributes to achieve the best result. 
 
+We believe our machine learning model is a good first step to helping people gain an understanding of home brewing. With the improvements described above, this tool can be transformed into a resource that more completely encompasses the complexities of this domain. 
 
 
 # References
